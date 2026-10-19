@@ -15,7 +15,7 @@
 **Godot 4** • **GDScript** • **PlayFab** • **Telegram Mini Apps**
 
 ## 🎮 Play Demo
-👉 [Play TrioWorld on itch.io](https://itch.io/)
+👉 [Play TrioWorld on itch.io](https://b1kecycle.itch.io/jumpgame)
 
 ## 👨‍💻 Development
 Developed during my internship at **ByteFarm (DreamsLab)** as part of the **nRoom GameHub** ecosystem.
