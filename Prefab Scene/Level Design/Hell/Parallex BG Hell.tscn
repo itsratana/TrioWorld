@@ -1,0 +1,130 @@
+[gd_scene load_steps=11 format=3 uid="uid://dcsl6jua6oqfj"]
+
+[ext_resource type="Texture2D" uid="uid://bvaveydvxkj27" path="res://Asset/SpritesHell'/Shadow.png" id="1_fu3rb"]
+[ext_resource type="Texture2D" uid="uid://biqt86im2q2va" path="res://Asset/SpritesHell'/Lava platform.png" id="2_5why4"]
+[ext_resource type="Texture2D" uid="uid://5em76m2l5sak" path="res://Asset/SpritesHell'/Lava Background B blur.png" id="2_b2ffj"]
+[ext_resource type="Texture2D" uid="uid://dsyr7ud8x0fi6" path="res://Asset/SpritesHell'/Lava Background A blur.png" id="3_hradx"]
+[ext_resource type="Texture2D" uid="uid://cfe2oph0wtl4b" path="res://Asset/SpritesHell'/Lava Background A blur elements.png" id="4_pifme"]
+[ext_resource type="Texture2D" uid="uid://d3clr04kvc2cy" path="res://Asset/SpritesHell'/Lava Background rock 2 blur.png" id="5_2viax"]
+[ext_resource type="Texture2D" uid="uid://dwhhposu2ah1p" path="res://Asset/SpritesHell'/Lava tree.png" id="5_l2b4h"]
+[ext_resource type="Texture2D" uid="uid://b53jg8e52518m" path="res://Asset/SpritesHell'/Lava Fog particle.png" id="5_vgr5f"]
+[ext_resource type="Texture2D" uid="uid://br38pabxkea6" path="res://Asset/SpritesHell'/Lava Background rock blur.png" id="7_ox8sf"]
+[ext_resource type="Texture2D" uid="uid://ddyu106msiy4v" path="res://Asset/SpritesHell'/Lava environment.png" id="8_tgdq3"]
+
+[node name="Level1" type="Node2D"]
+position = Vector2(316, 56)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxBackground" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(313, 54)
+motion_scale = Vector2(0.1, 0.1)
+motion_mirroring = Vector2(0, 1900)
+
+[node name="LavaBackgroundBBlur" type="Sprite2D" parent="ParallaxBackground/ParallaxBackground"]
+position = Vector2(247, 904.75)
+scale = Vector2(0.577341, 1.43106)
+texture = ExtResource("2_b2ffj")
+
+[node name="ParallaxMidground" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(336, 632)
+motion_scale = Vector2(0.25, 0.25)
+motion_mirroring = Vector2(0, 1900)
+
+[node name="LavaPlatform" type="Sprite2D" parent="ParallaxBackground/ParallaxMidground"]
+modulate = Color(1, 1, 1, 0.79)
+position = Vector2(-175, 879)
+texture = ExtResource("2_5why4")
+region_enabled = true
+region_rect = Rect2(481, 157, 311, 226)
+
+[node name="LavaBackgroundABlur" type="Sprite2D" parent="ParallaxBackground/ParallaxMidground"]
+position = Vector2(187, -4.00001)
+scale = Vector2(0.430196, 0.427707)
+texture = ExtResource("3_hradx")
+
+[node name="LavaBackgroundABlurElements" type="Sprite2D" parent="ParallaxBackground/ParallaxMidground"]
+position = Vector2(-239, 86)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_pifme")
+region_enabled = true
+region_rect = Rect2(1589, 214, 861, 1236)
+
+[node name="LavaTree" type="Sprite2D" parent="ParallaxBackground/ParallaxMidground"]
+modulate = Color(1, 1, 1, 0.691)
+position = Vector2(436, 123)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("5_l2b4h")
+region_enabled = true
+region_rect = Rect2(147, 104, 1188, 1547)
+
+[node name="LavaBackgroundABlurElements2" type="Sprite2D" parent="ParallaxBackground/ParallaxMidground"]
+position = Vector2(634, 106)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_pifme")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(1589, 214, 861, 1236)
+
+[node name="LavaFogParticle" type="Sprite2D" parent="ParallaxBackground/ParallaxMidground"]
+modulate = Color(1, 1, 1, 0.745098)
+position = Vector2(-130, 414)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vgr5f")
+
+[node name="LavaFogParticle2" type="Sprite2D" parent="ParallaxBackground/ParallaxMidground"]
+modulate = Color(1, 1, 1, 0.745098)
+position = Vector2(205, 426)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vgr5f")
+
+[node name="LavaFogParticle3" type="Sprite2D" parent="ParallaxBackground/ParallaxMidground"]
+modulate = Color(1, 1, 1, 0.745098)
+position = Vector2(543, 419)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vgr5f")
+
+[node name="LavaBackgroundRock2Blur" type="Sprite2D" parent="ParallaxBackground/ParallaxMidground"]
+modulate = Color(1, 1, 1, 0.686275)
+position = Vector2(184, 471)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("5_2viax")
+
+[node name="LavaEnvironment" type="Sprite2D" parent="ParallaxBackground/ParallaxMidground"]
+modulate = Color(1, 1, 1, 0.529)
+position = Vector2(-224, 694)
+texture = ExtResource("8_tgdq3")
+region_enabled = true
+region_rect = Rect2(1969, 50, 138, 809)
+
+[node name="ParallaxForeground" type="ParallaxLayer" parent="ParallaxBackground"]
+visible = false
+position = Vector2(313, 54)
+motion_scale = Vector2(0.6, 0.6)
+motion_mirroring = Vector2(0, 670)
+
+[node name="Platform" type="ParallaxLayer" parent="ParallaxBackground"]
+visible = false
+position = Vector2(313, 54)
+
+[node name="Shadow" type="Sprite2D" parent="ParallaxBackground/Platform"]
+position = Vector2(226.5, 1663.5)
+scale = Vector2(2.10352, 4.9625)
+texture = ExtResource("1_fu3rb")
+
+[node name="LavaBackgroundRockBlur" type="Sprite2D" parent="ParallaxBackground/Platform"]
+modulate = Color(1, 1, 1, 0.862745)
+position = Vector2(3, 1709)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("7_ox8sf")
+region_enabled = true
+region_rect = Rect2(26, 30, 2840, 1059)
+
+[node name="LavaBackgroundRockBlur2" type="Sprite2D" parent="ParallaxBackground/Platform"]
+modulate = Color(1, 1, 1, 0.862745)
+position = Vector2(441, 1708)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("7_ox8sf")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(26, 30, 2840, 1059)

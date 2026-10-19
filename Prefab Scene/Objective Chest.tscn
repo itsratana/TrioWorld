@@ -1,0 +1,179 @@
+[gd_scene load_steps=9 format=3 uid="uid://b4pmboecfiwry"]
+
+[ext_resource type="Texture2D" uid="uid://ddyu106msiy4v" path="res://Asset/SpritesHell'/Lava environment.png" id="2_tgqxr"]
+[ext_resource type="Texture2D" uid="uid://biqt86im2q2va" path="res://Asset/SpritesHell'/Lava platform.png" id="3_raw4m"]
+
+[sub_resource type="GDScript" id="GDScript_a6fus"]
+script/source = "extends Area2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[sub_resource type="Animation" id="Animation_dslpp"]
+resource_name = "Finish Animation"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LavaPlatform:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1.06667, 1.56667, 2.46667, 3.03333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Rect2(361, 410, 31, 340), Rect2(361, 76, 31, 340), Rect2(361, 76, 31, 340), Rect2(361, -266.43, 31, 340)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LavaEnvironment4/LavaEnvironment7:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.333333, 1.96667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LavaEnvironment4:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.4, 3.53333, 5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(513, -258.5), Vector2(513, -258.5), Vector2(711, -258)]
+}
+
+[sub_resource type="Animation" id="Animation_gwftr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LavaEnvironment4:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(513, -258.5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LavaPlatform:region_rect")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(361, 410, 31, 340)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LavaEnvironment4/LavaEnvironment7:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3ba2x"]
+_data = {
+"Finish Animation": SubResource("Animation_dslpp"),
+"RESET": SubResource("Animation_gwftr")
+}
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7ctd7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ehcs"]
+size = Vector2(376, 436)
+
+[node name="Area2D" type="Area2D"]
+script = SubResource("GDScript_a6fus")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_3ba2x")
+}
+
+[node name="1" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1, -6)
+scale = Vector2(1.5, 1.5)
+texture = SubResource("CompressedTexture2D_7ctd7")
+
+[node name="LavaEnvironment" type="Sprite2D" parent="."]
+position = Vector2(-5, -325)
+texture = ExtResource("2_tgqxr")
+region_enabled = true
+region_rect = Rect2(56, 48, 466, 700)
+
+[node name="LavaEnvironment2" type="Sprite2D" parent="."]
+position = Vector2(-13, -526)
+texture = ExtResource("2_tgqxr")
+region_enabled = true
+region_rect = Rect2(912, 1141, 55, 59)
+
+[node name="LavaEnvironment3" type="Sprite2D" parent="."]
+position = Vector2(505, -320.5)
+texture = ExtResource("2_tgqxr")
+region_enabled = true
+region_rect = Rect2(105, 962, 346, 616)
+
+[node name="LavaEnvironment4" type="Sprite2D" parent="."]
+position = Vector2(513, -258.5)
+texture = ExtResource("2_tgqxr")
+region_enabled = true
+region_rect = Rect2(585, 1006, 211, 557)
+
+[node name="LavaEnvironment6" type="Sprite2D" parent="LavaEnvironment4"]
+position = Vector2(-3, 0)
+texture = ExtResource("2_tgqxr")
+region_enabled = true
+region_rect = Rect2(891, 1279, 94, 104)
+
+[node name="LavaEnvironment7" type="Sprite2D" parent="LavaEnvironment4"]
+visible = false
+position = Vector2(-13, 0.5)
+rotation = 3.08215
+texture = ExtResource("2_tgqxr")
+region_enabled = true
+region_rect = Rect2(912, 1141, 55, 59)
+
+[node name="LavaEnvironment5" type="Sprite2D" parent="."]
+z_index = 5
+position = Vector2(641, -315.5)
+texture = ExtResource("2_tgqxr")
+region_enabled = true
+region_rect = Rect2(1063, 988, 393, 687)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(62, -309)
+shape = SubResource("RectangleShape2D_0ehcs")
+
+[node name="LavaPlatform" type="Sprite2D" parent="."]
+position = Vector2(263, -381)
+rotation = -1.08071
+scale = Vector2(1, 1.68828)
+texture = ExtResource("3_raw4m")
+region_enabled = true
+region_rect = Rect2(361, 410, 31, 340)

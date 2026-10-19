@@ -1,0 +1,78 @@
+[gd_scene load_steps=11 format=3 uid="uid://h8s4mpta5g7j"]
+
+[ext_resource type="Script" path="res://Script/coin_triggered.gd" id="1_lsnlk"]
+[ext_resource type="Texture2D" uid="uid://bew8uyxnh8g1o" path="res://Asset/SpritesHell'/Chest 1024x256(1x).png" id="2_psw6g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4xsb1"]
+atlas = ExtResource("2_psw6g")
+region = Rect2(76, 48, 148, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ebca"]
+atlas = ExtResource("2_psw6g")
+region = Rect2(224, 48, 148, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_obg56"]
+atlas = ExtResource("2_psw6g")
+region = Rect2(372, 48, 148, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b0wdo"]
+atlas = ExtResource("2_psw6g")
+region = Rect2(520, 48, 148, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_erp1w"]
+atlas = ExtResource("2_psw6g")
+region = Rect2(668, 48, 148, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r0n4i"]
+atlas = ExtResource("2_psw6g")
+region = Rect2(816, 48, 148, 160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7b1xa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4xsb1")
+}],
+"loop": true,
+"name": &"ChestIdle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4xsb1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ebca")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_obg56")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b0wdo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_erp1w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r0n4i")
+}],
+"loop": false,
+"name": &"ChestOpen",
+"speed": 25.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3vp2o"]
+size = Vector2(129, 152)
+
+[node name="Coin Triggered" type="Area2D"]
+script = ExtResource("1_lsnlk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(74, -76)
+sprite_frames = SubResource("SpriteFrames_7b1xa")
+animation = &"ChestOpen"
+autoplay = "ChestIdle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(65.5, -76)
+shape = SubResource("RectangleShape2D_3vp2o")

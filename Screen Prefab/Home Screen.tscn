@@ -1,0 +1,1072 @@
+[gd_scene load_steps=34 format=3 uid="uid://w7nk4a5fuj2g"]
+
+[ext_resource type="Script" path="res://Script/menu_manager.gd" id="1_44oh0"]
+[ext_resource type="Texture2D" uid="uid://h3qubyttyeuw" path="res://Asset/UI/Label/TrioWorld Game Group 1.png" id="2_ufdsf"]
+[ext_resource type="Texture2D" uid="uid://hun0mcym54ku" path="res://Asset/UI/Label/TrioWorld Game Group.png" id="3_8d8hd"]
+[ext_resource type="Texture2D" uid="uid://dl68dgc0i4kg8" path="res://HomeScreenBG.png" id="3_t36q2"]
+[ext_resource type="Texture2D" uid="uid://dntvu5q87ctxy" path="res://Asset/UI/Button/Leaderboard.png" id="4_6yvsn"]
+[ext_resource type="Texture2D" uid="uid://b7s8ih2rrsnbf" path="res://Asset/UI/Button/Pressed from Figma.png" id="5_8wy0j"]
+[ext_resource type="Texture2D" uid="uid://chbrlmtya112m" path="res://Asset/UI/Leaderboard/TrioWorld Game High Score.png" id="6_dog17"]
+[ext_resource type="FontFile" uid="uid://2rgs0sv8yofl" path="res://Asset/UI/Audio Setting/go3v2.ttf" id="7_csofh"]
+[ext_resource type="Texture2D" uid="uid://crxc4otspcjn" path="res://Asset/UI/Button/TrioWorld Game Leaderboard.png" id="8_co006"]
+[ext_resource type="Texture2D" uid="uid://3mcfwoixbnve" path="res://Asset/Other/Lock.png" id="8_s11ct"]
+[ext_resource type="Texture2D" uid="uid://cjr8d354ltgo5" path="res://HomeScreenLvl2.png" id="9_2xmqa"]
+[ext_resource type="Texture2D" uid="uid://c3caq11vq7j6w" path="res://Asset/UI/Label/Group.png" id="9_f8enm"]
+[ext_resource type="Texture2D" uid="uid://c5fmprty3r6kp" path="res://Asset/UI/Label/Group-1.png" id="10_uys6c"]
+[ext_resource type="Texture2D" uid="uid://bfs843qeb1pq6" path="res://HomeScreenBGLvl3.png" id="12_n7mub"]
+[ext_resource type="Texture2D" uid="uid://i1260ijh63rb" path="res://Asset/UI/Button/normal.png" id="12_y4r2e"]
+[ext_resource type="Texture2D" uid="uid://wxgdlv05jx8h" path="res://Asset/UI/Button/pressed.png" id="13_42je6"]
+[ext_resource type="Texture2D" uid="uid://diogax4q7hthe" path="res://Asset/UI/Label/name label.png" id="14_ynrjf"]
+[ext_resource type="Texture2D" uid="uid://btj7i2tlq02hn" path="res://Asset/UI/Label/coin label.png" id="15_weup5"]
+[ext_resource type="Texture2D" uid="uid://1s3otdj31ch3" path="res://Asset/UI/Button/Setting Label.png" id="16_icvtw"]
+[ext_resource type="Texture2D" uid="uid://bsk6ke23ykoxf" path="res://Asset/UI/Button/setting pressed.png" id="17_uuntj"]
+[ext_resource type="Texture2D" uid="uid://cnxmpucp5yqpk" path="res://Asset/UI/Button/TrioWorld Game Shop Normal.png" id="18_kd8bq"]
+[ext_resource type="Texture2D" uid="uid://dy4emvye4uwl6" path="res://Asset/UI/Button/shop pressed.png" id="19_dyjr3"]
+[ext_resource type="Texture2D" uid="uid://by8a8r85eu2tl" path="res://Asset/UI/Label/diamond label.png" id="20_dvlpn"]
+[ext_resource type="Script" path="res://Script/leaderboardUI.gd" id="21_6pc6g"]
+[ext_resource type="Texture2D" uid="uid://dh5m20hudt3hw" path="res://Asset/UI/Leaderboard/1.png" id="22_gq3qj"]
+[ext_resource type="Texture2D" uid="uid://dtqaqu4doqvf1" path="res://Asset/UI/Leaderboard/2.png" id="23_1ytjc"]
+[ext_resource type="Texture2D" uid="uid://bfkfj07d0ceki" path="res://Asset/UI/Leaderboard/3.png" id="24_e588b"]
+[ext_resource type="Texture2D" uid="uid://1wfp5msbdj3t" path="res://Asset/UI/Leaderboard/Group.png" id="25_k6isa"]
+[ext_resource type="Texture2D" uid="uid://7p28f54rh4hl" path="res://Asset/UI/Leaderboard/Group from Figma.png" id="26_7oqqq"]
+[ext_resource type="Texture2D" uid="uid://drmmn65r7f7dw" path="res://Asset/UI/Button/Close Button.png" id="27_fbdrs"]
+[ext_resource type="Texture2D" uid="uid://jchwe2x0aigs" path="res://Asset/UI/Button/Close Button Pressed.png" id="28_s7rhg"]
+[ext_resource type="PackedScene" uid="uid://chri3n3e1gcfv" path="res://Screen Prefab/LoadingScreen.tscn" id="31_aqslx"]
+[ext_resource type="PackedScene" uid="uid://c6h0hl02u0d6" path="res://Screen Prefab/audio_setting_ui.tscn" id="31_mkqbw"]
+
+[node name="Control" type="Control" node_paths=PackedStringArray("levels")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_right = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_44oh0")
+level_unlocks = Array[bool]([true, false, false])
+levels = [NodePath("HomeScreen/Level 1 Panel"), NodePath("HomeScreen/Level 2 Panel"), NodePath("HomeScreen/Level 3 Panel")]
+
+[node name="HomeScreen" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Title" type="Sprite2D" parent="HomeScreen"]
+position = Vector2(541, 414)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_ufdsf")
+
+[node name="Level 1 Panel" type="Sprite2D" parent="HomeScreen"]
+position = Vector2(529, 1179)
+rotation = 1.5708
+scale = Vector2(1.997, 1.85)
+
+[node name="HomeScreenBg" type="Sprite2D" parent="HomeScreen/Level 1 Panel"]
+modulate = Color(0.8, 0.8, 0.8, 0.941176)
+z_index = -1
+position = Vector2(-109.164, -4.32391)
+rotation = -1.5708
+scale = Vector2(0.686486, 0.635954)
+texture = ExtResource("3_t36q2")
+
+[node name="Panel" type="Sprite2D" parent="HomeScreen/Level 1 Panel"]
+texture_filter = 1
+position = Vector2(-109.395, -6.01331)
+rotation = -1.5708
+scale = Vector2(0.39, 0.362)
+texture = ExtResource("3_8d8hd")
+
+[node name="Leaderboard" type="TextureButton" parent="HomeScreen/Level 1 Panel"]
+offset_left = -220.831
+offset_top = 91.8927
+offset_right = -220.831
+offset_bottom = 91.8927
+rotation = -1.5708
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("4_6yvsn")
+texture_pressed = ExtResource("5_8wy0j")
+
+[node name="TrioWorldGameHighScore" type="Sprite2D" parent="HomeScreen/Level 1 Panel"]
+position = Vector2(-61.0917, -12.4322)
+rotation = -1.5708
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_dog17")
+
+[node name="Highscore2" type="Label" parent="HomeScreen/Level 1 Panel"]
+texture_filter = 1
+anchors_preset = -1
+anchor_left = -29.472
+anchor_top = -6.954
+anchor_right = -29.472
+anchor_bottom = -6.954
+offset_left = -11.4999
+offset_top = 65.3996
+offset_right = 642.5
+offset_bottom = 180.4
+rotation = -1.5708
+scale = Vector2(0.2, 0.2)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 102
+text = "00:00:00:00"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="HomeScreen/Level 1 Panel"]
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -148.221
+offset_top = 89.913
+offset_right = 441.779
+offset_bottom = 272.913
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -1.5708
+scale = Vector2(0.35, 0.35)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 164
+text = "Level 1"
+horizontal_alignment = 1
+
+[node name="Level 2 Panel" type="Sprite2D" parent="HomeScreen"]
+visible = false
+position = Vector2(529, 1179)
+rotation = 1.5708
+scale = Vector2(1.997, 1.85)
+
+[node name="HomeScreenLvl2" type="Sprite2D" parent="HomeScreen/Level 2 Panel"]
+modulate = Color(0.8, 0.8, 0.8, 0.941176)
+z_index = -1
+position = Vector2(-109.664, 16.2167)
+rotation = -1.5708
+scale = Vector2(0.63, 0.63)
+texture = ExtResource("9_2xmqa")
+
+[node name="Lock" type="Sprite2D" parent="HomeScreen/Level 2 Panel"]
+z_index = 6
+position = Vector2(-119.68, -8.6482)
+rotation = -1.5708
+scale = Vector2(0.162162, 0.150225)
+texture = ExtResource("8_s11ct")
+
+[node name="LevelPanel" type="Node2D" parent="HomeScreen/Level 2 Panel"]
+modulate = Color(0.35, 0.35, 0.35, 1)
+
+[node name="Panel" type="Sprite2D" parent="HomeScreen/Level 2 Panel/LevelPanel"]
+texture_filter = 1
+position = Vector2(-109.395, -6.01331)
+rotation = -1.5708
+scale = Vector2(0.39, 0.362)
+texture = ExtResource("3_8d8hd")
+
+[node name="Leaderboard2" type="TouchScreenButton" parent="HomeScreen/Level 2 Panel/LevelPanel"]
+position = Vector2(-220.831, 91.8927)
+rotation = -1.5708
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("4_6yvsn")
+texture_pressed = ExtResource("5_8wy0j")
+
+[node name="Leaderboard" type="TouchScreenButton" parent="HomeScreen/Level 2 Panel/LevelPanel"]
+visible = false
+
+[node name="LeaderboardLabel" type="Label" parent="HomeScreen/Level 2 Panel/LevelPanel/Leaderboard"]
+texture_filter = 1
+anchors_preset = -1
+anchor_left = -80.966
+anchor_top = -13.063
+anchor_right = -80.966
+anchor_bottom = -13.063
+offset_left = -189.622
+offset_top = 33.9089
+offset_right = 464.378
+offset_bottom = 148.909
+rotation = -1.5708
+scale = Vector2(0.2, 0.2)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 102
+text = "Leaderboard"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TrioWorldGameLeaderboard" type="TouchScreenButton" parent="HomeScreen/Level 2 Panel/LevelPanel/Leaderboard"]
+texture_filter = 1
+position = Vector2(-195.793, 77.2981)
+rotation = -1.5708
+scale = Vector2(0.07, 0.064)
+texture_normal = ExtResource("8_co006")
+
+[node name="TrioWorldGameHighScore" type="Sprite2D" parent="HomeScreen/Level 2 Panel/LevelPanel"]
+position = Vector2(-61.0917, -12.4322)
+rotation = -1.5708
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_dog17")
+
+[node name="Highscore2" type="Label" parent="HomeScreen/Level 2 Panel/LevelPanel"]
+texture_filter = 1
+anchors_preset = -1
+anchor_left = -80.966
+anchor_top = -13.063
+anchor_right = -80.966
+anchor_bottom = -13.063
+offset_left = -40.9719
+offset_top = 58.4456
+offset_right = 613.028
+offset_bottom = 173.446
+rotation = -1.5708
+scale = Vector2(0.2, 0.2)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 102
+text = "0h 0m 0s 0ms"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="HomeScreen/Level 2 Panel/LevelPanel"]
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -147.721
+offset_top = 89.913
+offset_right = 442.279
+offset_bottom = 273.913
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -1.5708
+scale = Vector2(0.35, 0.35)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 164
+text = "Level 2"
+horizontal_alignment = 1
+
+[node name="Level 3 Panel" type="Sprite2D" parent="HomeScreen"]
+visible = false
+position = Vector2(529, 1179)
+rotation = 1.5708
+scale = Vector2(1.997, 1.85)
+
+[node name="HomeScreenLvl3" type="Sprite2D" parent="HomeScreen/Level 3 Panel"]
+modulate = Color(0.8, 0.8, 0.8, 0.941176)
+z_index = -1
+position = Vector2(-109.665, -3.78335)
+rotation = -1.5708
+scale = Vector2(0.63, 0.63)
+texture = ExtResource("12_n7mub")
+
+[node name="Lock" type="Sprite2D" parent="HomeScreen/Level 3 Panel"]
+z_index = 6
+position = Vector2(-119.68, -8.6482)
+rotation = -1.5708
+scale = Vector2(0.162162, 0.150225)
+texture = ExtResource("8_s11ct")
+
+[node name="LevelPanel" type="Node2D" parent="HomeScreen/Level 3 Panel"]
+modulate = Color(0.35, 0.35, 0.35, 1)
+
+[node name="Panel" type="Sprite2D" parent="HomeScreen/Level 3 Panel/LevelPanel"]
+texture_filter = 1
+position = Vector2(-109.395, -6.01331)
+rotation = -1.5708
+scale = Vector2(0.39, 0.362)
+texture = ExtResource("3_8d8hd")
+
+[node name="Leaderboard3" type="TouchScreenButton" parent="HomeScreen/Level 3 Panel/LevelPanel"]
+position = Vector2(-220.831, 91.8927)
+rotation = -1.5708
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("4_6yvsn")
+texture_pressed = ExtResource("5_8wy0j")
+
+[node name="Leaderboard" type="TouchScreenButton" parent="HomeScreen/Level 3 Panel/LevelPanel"]
+visible = false
+
+[node name="LeaderboardLabel" type="Label" parent="HomeScreen/Level 3 Panel/LevelPanel/Leaderboard"]
+texture_filter = 1
+anchors_preset = -1
+anchor_left = -80.966
+anchor_top = -13.063
+anchor_right = -80.966
+anchor_bottom = -13.063
+offset_left = -189.622
+offset_top = 33.9089
+offset_right = 464.378
+offset_bottom = 148.909
+rotation = -1.5708
+scale = Vector2(0.2, 0.2)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 102
+text = "Leaderboard"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TrioWorldGameLeaderboard" type="TouchScreenButton" parent="HomeScreen/Level 3 Panel/LevelPanel/Leaderboard"]
+texture_filter = 1
+position = Vector2(-195.793, 77.2981)
+rotation = -1.5708
+scale = Vector2(0.07, 0.064)
+texture_normal = ExtResource("8_co006")
+
+[node name="TrioWorldGameHighScore" type="Sprite2D" parent="HomeScreen/Level 3 Panel/LevelPanel"]
+position = Vector2(-61.0917, -12.4322)
+rotation = -1.5708
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_dog17")
+
+[node name="Highscore2" type="Label" parent="HomeScreen/Level 3 Panel/LevelPanel"]
+texture_filter = 1
+anchors_preset = -1
+anchor_left = -80.966
+anchor_top = -13.063
+anchor_right = -80.966
+anchor_bottom = -13.063
+offset_left = -40.9719
+offset_top = 58.4456
+offset_right = 613.028
+offset_bottom = 173.446
+rotation = -1.5708
+scale = Vector2(0.2, 0.2)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 102
+text = "0h 0m 0s 0ms"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="HomeScreen/Level 3 Panel/LevelPanel"]
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -147.721
+offset_top = 89.913
+offset_right = 442.279
+offset_bottom = 273.913
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -1.5708
+scale = Vector2(0.35, 0.35)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 164
+text = "Level 3"
+horizontal_alignment = 1
+
+[node name="ArrowNext" type="TextureButton" parent="HomeScreen"]
+layout_mode = 0
+offset_left = 927.0
+offset_top = 890.0
+offset_right = 927.0
+offset_bottom = 890.0
+scale = Vector2(1, 1.01)
+texture_normal = ExtResource("9_f8enm")
+
+[node name="ArrowPrev" type="TextureButton" parent="HomeScreen"]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 890.0
+offset_right = 31.0
+offset_bottom = 890.0
+scale = Vector2(1, 1.01)
+texture_normal = ExtResource("10_uys6c")
+
+[node name="Play Panel" type="TextureButton" parent="HomeScreen"]
+layout_mode = 0
+offset_left = 182.0
+offset_top = 1332.0
+offset_right = 182.0
+offset_bottom = 1332.0
+texture_normal = ExtResource("12_y4r2e")
+texture_pressed = ExtResource("13_42je6")
+
+[node name="NameBar" type="Control" parent="."]
+anchors_preset = 0
+
+[node name="Group3" type="Sprite2D" parent="NameBar"]
+position = Vector2(215, 96)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("14_ynrjf")
+
+[node name="Username" type="Label" parent="NameBar/Group3"]
+texture_filter = 1
+anchors_preset = -1
+anchor_left = -80.966
+anchor_top = -13.063
+anchor_right = -80.966
+anchor_bottom = -13.063
+offset_left = 35848.9
+offset_top = 1960.24
+offset_right = 36502.9
+offset_bottom = 2075.24
+scale = Vector2(0.45, 0.45)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 102
+text = "Username"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Coin" type="Sprite2D" parent="NameBar"]
+position = Vector2(665, 101)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("15_weup5")
+
+[node name="Coin" type="Label" parent="NameBar/Coin"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 22.5
+offset_top = -87.0
+offset_right = 478.5
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 105
+text = "0"
+
+[node name="DiamondIcon" type="Sprite2D" parent="NameBar"]
+position = Vector2(479, 101)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("20_dvlpn")
+
+[node name="Diamond" type="Label" parent="NameBar/DiamondIcon"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 20.25
+offset_top = -87.25
+offset_right = 190.25
+offset_bottom = 31.75
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 105
+text = "0"
+
+[node name="Setting" type="TextureButton" parent="NameBar"]
+layout_mode = 0
+offset_left = 953.0
+offset_top = 61.0
+offset_right = 953.0
+offset_bottom = 61.0
+scale = Vector2(0.7, 0.7)
+texture_normal = ExtResource("16_icvtw")
+texture_pressed = ExtResource("17_uuntj")
+
+[node name="Shop" type="TouchScreenButton" parent="NameBar"]
+position = Vector2(953, 260)
+scale = Vector2(0.7, 0.7)
+texture_normal = ExtResource("18_kd8bq")
+texture_pressed = ExtResource("19_dyjr3")
+
+[node name="Leaderboard" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("21_6pc6g")
+
+[node name="Panel" type="Panel" parent="Leaderboard"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = -1.0
+offset_right = 1080.0
+offset_bottom = 1920.0
+
+[node name="Panel2" type="Panel" parent="Leaderboard/Panel"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_right = 1081.0
+offset_bottom = 1920.0
+
+[node name="Level 1 Leaderboard" type="Control" parent="Leaderboard"]
+layout_mode = 2
+anchors_preset = 0
+offset_left = 139.0
+offset_top = 576.0
+offset_right = 139.0
+offset_bottom = 576.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Leaderboard/Level 1 Leaderboard"]
+layout_mode = 0
+offset_right = 951.0
+offset_bottom = 861.0
+scale = Vector2(0.85, 0.85)
+horizontal_scroll_mode = 0
+scroll_deadzone = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer"]
+layout_mode = 2
+
+[node name="TextureRect1" type="TextureRect" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer"]
+z_index = 1
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource("22_gq3qj")
+
+[node name="Username" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect1"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 1
+layout_mode = 0
+offset_left = 189.412
+offset_top = 45.8828
+offset_right = 2572.42
+offset_bottom = 604.883
+scale = Vector2(0.1, 0.1)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "Username"
+
+[node name="Score" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect1"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 1
+layout_mode = 0
+offset_left = 537.647
+offset_top = 49.416
+offset_right = 4625.65
+offset_bottom = 608.417
+scale = Vector2(0.08, 0.08)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "13H 34M 47S 12MS"
+horizontal_alignment = 2
+
+[node name="TextureRect2" type="TextureRect" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer"]
+z_index = 1
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource("23_1ytjc")
+
+[node name="Username" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect2"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 1
+layout_mode = 0
+offset_left = 189.412
+offset_top = 45.8818
+offset_right = 2572.42
+offset_bottom = 604.882
+scale = Vector2(0.1, 0.1)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "Username"
+
+[node name="Score" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect2"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 1
+layout_mode = 0
+offset_left = 537.647
+offset_top = 49.4043
+offset_right = 4625.65
+offset_bottom = 608.404
+scale = Vector2(0.08, 0.08)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "15H 19M 34S 21MS"
+horizontal_alignment = 2
+
+[node name="TextureRect3" type="TextureRect" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer"]
+z_index = 1
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource("24_e588b")
+
+[node name="Username" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect3"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 1
+layout_mode = 0
+offset_left = 189.412
+offset_top = 45.8799
+offset_right = 2572.42
+offset_bottom = 604.88
+scale = Vector2(0.1, 0.1)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "Username"
+
+[node name="Score" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect3"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 1
+layout_mode = 0
+offset_left = 537.647
+offset_top = 49.4023
+offset_right = 4625.65
+offset_bottom = 608.403
+scale = Vector2(0.08, 0.08)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "15H 9M 2S 10MS"
+horizontal_alignment = 2
+
+[node name="TextureRect4" type="TextureRect" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer"]
+z_index = 1
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource("25_k6isa")
+
+[node name="Username" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect4"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 1
+layout_mode = 0
+offset_left = 189.412
+offset_top = 45.8799
+offset_right = 2572.42
+offset_bottom = 604.88
+scale = Vector2(0.1, 0.1)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "Username"
+
+[node name="Score" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect4"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 1
+layout_mode = 0
+offset_left = 537.647
+offset_top = 49.4023
+offset_right = 4625.65
+offset_bottom = 608.403
+scale = Vector2(0.08, 0.08)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "16H 51M 41S 23MS"
+horizontal_alignment = 2
+
+[node name="ranking" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect4"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+layout_mode = 0
+offset_left = 89.4117
+offset_top = 22.2363
+offset_right = 358.412
+offset_bottom = 581.237
+scale = Vector2(0.17, 0.17)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect5" type="TextureRect" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer"]
+z_index = 1
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource("25_k6isa")
+
+[node name="Username" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect5"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 1
+layout_mode = 0
+offset_left = 189.412
+offset_top = 45.8799
+offset_right = 2572.42
+offset_bottom = 604.88
+scale = Vector2(0.1, 0.1)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "Username"
+
+[node name="Score" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect5"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 1
+layout_mode = 0
+offset_left = 537.647
+offset_top = 49.4023
+offset_right = 4625.65
+offset_bottom = 608.403
+scale = Vector2(0.08, 0.08)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "16H 49M 4S 20MS"
+horizontal_alignment = 2
+
+[node name="ranking" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect5"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+layout_mode = 0
+offset_left = 89.4117
+offset_top = 22.2363
+offset_right = 358.412
+offset_bottom = 581.237
+scale = Vector2(0.17, 0.17)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect6" type="TextureRect" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer"]
+z_index = 1
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource("25_k6isa")
+
+[node name="Username" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect6"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 1
+layout_mode = 0
+offset_left = 189.412
+offset_top = 45.8789
+offset_right = 2572.42
+offset_bottom = 604.879
+scale = Vector2(0.1, 0.1)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "Username"
+
+[node name="Score" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect6"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 1
+layout_mode = 0
+offset_left = 537.647
+offset_top = 49.4121
+offset_right = 4625.65
+offset_bottom = 608.413
+scale = Vector2(0.08, 0.08)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "16H 28M 58S 19MS"
+horizontal_alignment = 2
+
+[node name="ranking" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect6"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+layout_mode = 0
+offset_left = 89.4117
+offset_top = 22.2363
+offset_right = 358.412
+offset_bottom = 581.237
+scale = Vector2(0.17, 0.17)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "6"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect7" type="TextureRect" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer"]
+z_index = 1
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource("25_k6isa")
+
+[node name="Username" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect7"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 1
+layout_mode = 0
+offset_left = 189.412
+offset_top = 45.8799
+offset_right = 2572.42
+offset_bottom = 604.88
+scale = Vector2(0.1, 0.1)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "Username"
+
+[node name="Score" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect7"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 1
+layout_mode = 0
+offset_left = 537.647
+offset_top = 49.4121
+offset_right = 4625.65
+offset_bottom = 608.413
+scale = Vector2(0.08, 0.08)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "16H 5M 16S 15MS"
+horizontal_alignment = 2
+
+[node name="ranking" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect7"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+layout_mode = 0
+offset_left = 89.4117
+offset_top = 22.2363
+offset_right = 358.412
+offset_bottom = 581.237
+scale = Vector2(0.17, 0.17)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "7"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect8" type="TextureRect" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer"]
+z_index = 1
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource("25_k6isa")
+
+[node name="Username" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect8"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 1
+layout_mode = 0
+offset_left = 189.412
+offset_top = 45.8809
+offset_right = 2572.42
+offset_bottom = 604.881
+scale = Vector2(0.1, 0.1)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "Username"
+
+[node name="Score" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect8"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 1
+layout_mode = 0
+offset_left = 537.647
+offset_top = 49.4121
+offset_right = 4625.65
+offset_bottom = 608.413
+scale = Vector2(0.08, 0.08)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "17H 56M 9S 12MS"
+horizontal_alignment = 2
+
+[node name="ranking" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect8"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+layout_mode = 0
+offset_left = 89.4117
+offset_top = 22.2363
+offset_right = 358.412
+offset_bottom = 581.237
+scale = Vector2(0.17, 0.17)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "8"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect9" type="TextureRect" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer"]
+z_index = 1
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource("25_k6isa")
+
+[node name="Username" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect9"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 1
+layout_mode = 0
+offset_left = 189.412
+offset_top = 45.8809
+offset_right = 2572.42
+offset_bottom = 604.881
+scale = Vector2(0.1, 0.1)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "Username"
+
+[node name="Score" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect9"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 1
+layout_mode = 0
+offset_left = 537.647
+offset_top = 49.4102
+offset_right = 4625.65
+offset_bottom = 608.411
+scale = Vector2(0.08, 0.08)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "17H 32M 12S 24MS"
+horizontal_alignment = 2
+
+[node name="ranking" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect9"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+layout_mode = 0
+offset_left = 89.4117
+offset_top = 22.2363
+offset_right = 358.412
+offset_bottom = 581.237
+scale = Vector2(0.17, 0.17)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "9"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect10" type="TextureRect" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer"]
+z_index = 1
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource("25_k6isa")
+
+[node name="Username" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect10"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 1
+layout_mode = 0
+offset_left = 189.412
+offset_top = 45.8809
+offset_right = 2572.42
+offset_bottom = 604.881
+scale = Vector2(0.1, 0.1)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "Username"
+
+[node name="Score" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect10"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 1
+layout_mode = 0
+offset_left = 537.647
+offset_top = 49.4102
+offset_right = 4625.65
+offset_bottom = 608.411
+scale = Vector2(0.08, 0.08)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "18H 12M 5S 14MS"
+horizontal_alignment = 2
+
+[node name="ranking" type="Label" parent="Leaderboard/Level 1 Leaderboard/ScrollContainer/VBoxContainer/TextureRect10"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+layout_mode = 0
+offset_left = 42.353
+offset_top = 22.2363
+offset_right = 580.353
+offset_bottom = 581.237
+scale = Vector2(0.17, 0.17)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Level Index" type="Label" parent="Leaderboard/Level 1 Leaderboard"]
+z_index = 1
+texture_filter = 1
+layout_mode = 0
+offset_left = 269.0
+offset_top = -130.0
+offset_right = 946.0
+offset_bottom = 84.0001
+scale = Vector2(0.35, 0.35)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 191
+text = "LEVEL 1"
+
+[node name="GroupFromFigma" type="Sprite2D" parent="Leaderboard"]
+position = Vector2(538, 945)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("26_7oqqq")
+
+[node name="OwnScore" type="Node2D" parent="Leaderboard"]
+position = Vector2(538, 945)
+scale = Vector2(0.8, 0.8)
+
+[node name="Your Score Label" type="Sprite2D" parent="Leaderboard/OwnScore"]
+position = Vector2(-1.25, 538.75)
+scale = Vector2(1.125, 1.125)
+texture = ExtResource("25_k6isa")
+
+[node name="1" type="Sprite2D" parent="Leaderboard/OwnScore"]
+visible = false
+z_index = 2
+position = Vector2(-1.25, 541.25)
+scale = Vector2(1.125, 1.125)
+texture = ExtResource("22_gq3qj")
+
+[node name="2" type="Sprite2D" parent="Leaderboard/OwnScore"]
+visible = false
+z_index = 2
+position = Vector2(-1.25, 538.75)
+scale = Vector2(1.125, 1.125)
+texture = ExtResource("23_1ytjc")
+
+[node name="3" type="Sprite2D" parent="Leaderboard/OwnScore"]
+visible = false
+z_index = 2
+position = Vector2(-1.25, 541.25)
+scale = Vector2(1.125, 1.125)
+texture = ExtResource("24_e588b")
+
+[node name="Username" type="Label" parent="Leaderboard/OwnScore"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 5
+offset_left = -348.75
+offset_top = 505.0
+offset_right = 2034.25
+offset_bottom = 1064.0
+scale = Vector2(0.12, 0.12)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "Username"
+
+[node name="Rank" type="Label" parent="Leaderboard/OwnScore"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 1
+offset_left = -481.25
+offset_top = 490.0
+offset_right = 56.75
+offset_bottom = 1049.0
+scale = Vector2(0.17, 0.17)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "00"
+
+[node name="Score" type="Label" parent="Leaderboard/OwnScore"]
+modulate = Color(1, 0.678431, 0.109804, 1)
+z_index = 5
+offset_left = 57.4977
+offset_top = 511.25
+offset_right = 4145.5
+offset_bottom = 1070.25
+scale = Vector2(0.09, 0.09)
+theme_override_fonts/font = ExtResource("7_csofh")
+theme_override_font_sizes/font_size = 500
+text = "00H 00M 00S 00MS"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="CloseButton" type="TextureButton" parent="Leaderboard"]
+layout_mode = 0
+offset_left = 287.0
+offset_top = 1493.0
+offset_right = 287.0
+offset_bottom = 1493.0
+scale = Vector2(0.8, 0.8)
+texture_normal = ExtResource("27_fbdrs")
+texture_pressed = ExtResource("28_s7rhg")
+
+[node name="Loading" parent="." instance=ExtResource("31_aqslx")]
+layout_mode = 1
+offset_left = 1.0
+offset_right = 1.0
+
+[node name="AudioSetting" parent="." instance=ExtResource("31_mkqbw")]
+visible = false
+layout_mode = 1
+
+[node name="CloseAudioSetting" type="TextureButton" parent="AudioSetting"]
+layout_mode = 0
+offset_left = 319.0
+offset_top = 1483.0
+offset_right = 948.0
+offset_bottom = 1683.0
+scale = Vector2(0.75, 0.75)
+texture_normal = ExtResource("27_fbdrs")
+texture_pressed = ExtResource("28_s7rhg")
+
+[connection signal="pressed" from="HomeScreen/Level 1 Panel/Leaderboard" to="." method="_on_leaderboard_pressed"]
+[connection signal="pressed" from="HomeScreen/ArrowNext" to="." method="_on_arrow_next_pressed"]
+[connection signal="pressed" from="HomeScreen/ArrowPrev" to="." method="_on_arrow_prev_pressed"]
+[connection signal="pressed" from="HomeScreen/Play Panel" to="." method="_on_play_panel_pressed"]
+[connection signal="pressed" from="NameBar/Setting" to="." method="_on_setting_pressed"]
+[connection signal="pressed" from="Leaderboard/CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="AudioSetting/CloseAudioSetting" to="." method="_on_close_audio_setting_pressed"]

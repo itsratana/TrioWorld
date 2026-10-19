@@ -1,0 +1,86 @@
+[gd_scene load_steps=3 format=3 uid="uid://d31pxdhalhm54"]
+
+[ext_resource type="Texture2D" uid="uid://1s5fu7phkjb6" path="res://Asset/Other/Tap Icons.png" id="1_flmbp"]
+[ext_resource type="FontFile" uid="uid://2rgs0sv8yofl" path="res://Asset/UI/Audio Setting/go3v2.ttf" id="2_whsk0"]
+
+[node name="Tutorial" type="Node2D"]
+process_mode = 3
+position = Vector2(0, 4)
+
+[node name="Press Left" type="Panel" parent="."]
+offset_top = 576.0
+offset_right = 471.0
+offset_bottom = 1281.0
+
+[node name="TapIcons2" type="Sprite2D" parent="Press Left"]
+texture_filter = 1
+position = Vector2(229, 160)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_flmbp")
+flip_h = true
+
+[node name="Label2" type="Label" parent="Press Left"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 359.0
+offset_right = 431.0
+offset_bottom = 581.0
+theme_override_fonts/font = ExtResource("2_whsk0")
+theme_override_font_sizes/font_size = 30
+text = "Press left side
+of the screen to jump left.
+
+Tap and hold to indicate
+how high the jump is"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Press Right" type="Panel" parent="."]
+offset_left = 608.0
+offset_top = 576.0
+offset_right = 1079.0
+offset_bottom = 1281.0
+
+[node name="TapIcons" type="Sprite2D" parent="Press Right"]
+texture_filter = 1
+position = Vector2(254, 167)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_flmbp")
+
+[node name="Label" type="Label" parent="Press Right"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 360.0
+offset_right = 437.0
+offset_bottom = 582.0
+theme_override_fonts/font = ExtResource("2_whsk0")
+theme_override_font_sizes/font_size = 30
+text = "Press right side
+of the screen to jump right.
+
+Tap and hold to indicate
+how high the jump is"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="."]
+offset_left = 271.0
+offset_top = 323.0
+offset_right = 819.0
+offset_bottom = 546.0
+theme_override_fonts/font = ExtResource("2_whsk0")
+theme_override_font_sizes/font_size = 81
+text = "Tutorial"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 318.0
+offset_top = 1347.0
+offset_right = 754.0
+offset_bottom = 1404.0
+theme_override_fonts/font = ExtResource("2_whsk0")
+theme_override_font_sizes/font_size = 41
+text = "Tap to continue"
+horizontal_alignment = 1
+vertical_alignment = 1

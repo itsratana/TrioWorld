@@ -1,0 +1,101 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6h0hl02u0d6"]
+
+[ext_resource type="Script" path="res://Sound/Manager/audio_setting_ui.gd" id="1_mbuah"]
+[ext_resource type="Texture2D" uid="uid://b0istrn78fu8w" path="res://Asset/UI/Audio Setting/AudioSettingPanel.png" id="2_6rdbp"]
+[ext_resource type="FontFile" uid="uid://2rgs0sv8yofl" path="res://Asset/UI/Audio Setting/go3v2.ttf" id="3_wr5sp"]
+
+[node name="AudioSetting" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mbuah")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = -9.0
+offset_right = 1087.0
+offset_bottom = 1944.0
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 0
+offset_left = -9.0
+offset_right = 1087.0
+offset_bottom = 1944.0
+
+[node name="Panel3" type="Panel" parent="."]
+layout_mode = 0
+offset_left = -9.0
+offset_right = 1087.0
+offset_bottom = 1944.0
+
+[node name="AudioSettingPanel" type="Sprite2D" parent="."]
+position = Vector2(554, 1012)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_6rdbp")
+
+[node name="MasterVolumeSlider" type="HSlider" parent="."]
+layout_mode = 0
+offset_left = 483.0
+offset_top = 716.0
+offset_right = 616.0
+offset_bottom = 732.0
+scale = Vector2(2.5, 2.5)
+value = 100.0
+
+[node name="MusicVolumeSlider" type="HSlider" parent="."]
+layout_mode = 0
+offset_left = 483.0
+offset_top = 854.0
+offset_right = 616.0
+offset_bottom = 870.0
+scale = Vector2(2.5, 2.5)
+value = 100.0
+
+[node name="SFXVolumeSlider" type="HSlider" parent="."]
+layout_mode = 0
+offset_left = 483.0
+offset_top = 992.0
+offset_right = 616.0
+offset_bottom = 1008.0
+scale = Vector2(2.5, 2.5)
+value = 100.0
+
+[node name="Master" type="Label" parent="."]
+layout_mode = 0
+offset_left = 846.0
+offset_top = 708.0
+offset_right = 1251.0
+offset_bottom = 990.0
+scale = Vector2(0.2, 0.2)
+theme_override_fonts/font = ExtResource("3_wr5sp")
+theme_override_font_sizes/font_size = 251
+text = "100"
+
+[node name="Music" type="Label" parent="."]
+layout_mode = 0
+offset_left = 846.0
+offset_top = 841.0
+offset_right = 1251.0
+offset_bottom = 1123.0
+scale = Vector2(0.2, 0.2)
+theme_override_fonts/font = ExtResource("3_wr5sp")
+theme_override_font_sizes/font_size = 251
+text = "100"
+
+[node name="SFX" type="Label" parent="."]
+layout_mode = 0
+offset_left = 845.0
+offset_top = 983.0
+offset_right = 1250.0
+offset_bottom = 1265.0
+scale = Vector2(0.2, 0.2)
+theme_override_fonts/font = ExtResource("3_wr5sp")
+theme_override_font_sizes/font_size = 251
+text = "100"
+
+[connection signal="value_changed" from="MasterVolumeSlider" to="." method="_on_master_volume_slider_value_changed"]
+[connection signal="value_changed" from="MusicVolumeSlider" to="." method="_on_music_volumn_slider_value_changed"]
+[connection signal="value_changed" from="SFXVolumeSlider" to="." method="_on_sfx_volumn_slider_value_changed"]

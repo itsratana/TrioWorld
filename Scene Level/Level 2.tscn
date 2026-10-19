@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bn1vly3qdwxmv"]
+
+[ext_resource type="PackedScene" uid="uid://dcsl6jua6oqfj" path="res://Prefab Scene/Level Design/Hell/Parallex BG Hell.tscn" id="1_immr0"]
+
+[node name="Level2" type="Node2D"]
+
+[node name="Level1" parent="." instance=ExtResource("1_immr0")]

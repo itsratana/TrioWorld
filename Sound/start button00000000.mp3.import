@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b33rqyegusmkn"
+path="res://.godot/imported/start button00000000.mp3-3525cd870b7d6fe0e49066118a75e76a.mp3str"
+
+[deps]
+
+source_file="res://Sound/start button00000000.mp3"
+dest_files=["res://.godot/imported/start button00000000.mp3-3525cd870b7d6fe0e49066118a75e76a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

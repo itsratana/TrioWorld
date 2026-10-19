@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://5c0lslvuopga"]
+
+[ext_resource type="Script" path="res://Sound/Manager/audio_manager.gd" id="1_4bn7w"]
+[ext_resource type="AudioStream" uid="uid://c5mukbhqf0aty" path="res://Sound/GameMenu.mp3" id="2_mjyvp"]
+[ext_resource type="AudioStream" uid="uid://rkt3jte44kjg" path="res://Sound/In-Game Music.mp3" id="3_8yaby"]
+[ext_resource type="AudioStream" uid="uid://ij1s7bwx20c2" path="res://Sound/jump.mp3" id="4_6aa34"]
+[ext_resource type="AudioStream" uid="uid://bqsto5ahkduno" path="res://Sound/coin collected.mp3" id="5_flmdu"]
+[ext_resource type="AudioStream" uid="uid://mmipy547ynat" path="res://Sound/Footstep Stomp Sound Effect.mp3" id="6_6h7fm"]
+
+[node name="AudioManager" type="Node" node_paths=PackedStringArray("music", "sfx")]
+process_mode = 3
+script = ExtResource("1_4bn7w")
+music = NodePath("Music")
+sfx = NodePath("SFX")
+
+[node name="Music" type="Node" parent="."]
+
+[node name="MainMenu" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource("2_mjyvp")
+bus = &"Music"
+parameters/looping = true
+
+[node name="InGame" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource("3_8yaby")
+volume_db = 10.0
+bus = &"Music"
+parameters/looping = true
+
+[node name="SFX" type="Node" parent="."]
+
+[node name="Jump" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("4_6aa34")
+bus = &"SFX"
+
+[node name="ChestCoin" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("5_flmdu")
+bus = &"SFX"
+
+[node name="Footstep" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("6_6h7fm")
+volume_db = -10.0
+pitch_scale = 0.9
+bus = &"SFX"
+parameters/looping = true

@@ -1,0 +1,4563 @@
+[gd_scene load_steps=42 format=4 uid="uid://c304cgbfqys8g"]
+
+[ext_resource type="Texture2D" uid="uid://dkjf2tnrp54cy" path="res://Asset/SpritesHell'/Lava ground shape sides.png" id="1_wexds"]
+[ext_resource type="Texture2D" uid="uid://brfly4xibm16r" path="res://Asset/SpritesHell'/Lava ground shape Alt2 fill.png" id="2_7w4sh"]
+[ext_resource type="Texture2D" uid="uid://ddyu106msiy4v" path="res://Asset/SpritesHell'/Lava environment.png" id="2_quqf4"]
+[ext_resource type="Texture2D" uid="uid://cmila60og5a2f" path="res://Asset/SpritesHell'/Lava ground shape fill.png" id="2_umlw4"]
+[ext_resource type="Texture2D" uid="uid://biuoavskd346l" path="res://Asset/SpritesHell'/Lava ground shape fill Left.png" id="2_x0mr2"]
+[ext_resource type="Texture2D" uid="uid://n5uhur2ygknh" path="res://Asset/SpritesHell'/Lava ground shape fill Right.png" id="3_jtm0v"]
+[ext_resource type="Texture2D" uid="uid://8s6lmm6e22gg" path="res://Asset/SpritesHell'/Lava ground shape sides Alt.png" id="3_la8hy"]
+[ext_resource type="Texture2D" uid="uid://bd5xi7qb3fg4s" path="res://Asset/SpritesHell'/Lava ground shape Alt fill.png" id="3_s6d6a"]
+[ext_resource type="Texture2D" uid="uid://bw0dib714e7r1" path="res://Asset/SpritesHell'/Lava ground shape Alt fill Left.png" id="4_37ghg"]
+[ext_resource type="Texture2D" uid="uid://qyu87jxq5c3w" path="res://Asset/SpritesHell'/Lava ground shape Alt fill Right.png" id="5_1gbdf"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5u4jm"]
+texture = ExtResource("2_umlw4")
+texture_region_size = Vector2i(647, 647)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a7uia"]
+texture = ExtResource("2_x0mr2")
+texture_region_size = Vector2i(647, 647)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_si1we"]
+texture = ExtResource("3_jtm0v")
+texture_region_size = Vector2i(647, 647)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_h6dv8"]
+tile_size = Vector2i(647, 647)
+sources/0 = SubResource("TileSetAtlasSource_5u4jm")
+sources/3 = SubResource("TileSetAtlasSource_a7uia")
+sources/4 = SubResource("TileSetAtlasSource_si1we")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nieln"]
+texture = ExtResource("2_7w4sh")
+texture_region_size = Vector2i(609, 609)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eioja"]
+texture = ExtResource("3_s6d6a")
+texture_region_size = Vector2i(609, 609)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2rddg"]
+texture = ExtResource("4_37ghg")
+texture_region_size = Vector2i(609, 609)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oi60w"]
+texture = ExtResource("5_1gbdf")
+texture_region_size = Vector2i(609, 609)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_0o2m4"]
+tile_size = Vector2i(609, 609)
+sources/1 = SubResource("TileSetAtlasSource_nieln")
+sources/2 = SubResource("TileSetAtlasSource_eioja")
+sources/3 = SubResource("TileSetAtlasSource_2rddg")
+sources/4 = SubResource("TileSetAtlasSource_oi60w")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jsw1j"]
+size = Vector2(613.333, 450)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i06fp"]
+size = Vector2(273.332, 279.999)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uyyjv"]
+size = Vector2(1168.9, 3329.07)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yljfh"]
+size = Vector2(380.403, 98.7834)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_thkuw"]
+size = Vector2(703.335, 220)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_osvat"]
+size = Vector2(723.333, 260)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mksxc"]
+size = Vector2(546.667, 453.332)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bm76m"]
+size = Vector2(197.333, 102.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_goyi4"]
+size = Vector2(690, 104.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_teoe5"]
+size = Vector2(909.999, 431.168)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uyomv"]
+size = Vector2(583.667, 673.333)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kwh4d"]
+size = Vector2(999.844, 400)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fhnpl"]
+size = Vector2(686.667, 486.668)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_36x3r"]
+size = Vector2(1330, 100.001)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_agbre"]
+size = Vector2(623.333, 666.667)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vp1wh"]
+size = Vector2(610, 130)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6j8oy"]
+size = Vector2(640, 1400)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_siatw"]
+size = Vector2(683.333, 525)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_022gq"]
+size = Vector2(1122, 61)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6hnbe"]
+size = Vector2(44, 18510)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2mj6v"]
+size = Vector2(48, 18506)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_430w3"]
+size = Vector2(3430, 246.674)
+
+[node name="HellPlatform" type="Node"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+position = Vector2(338, 1201)
+scale = Vector2(0.09, 0.09)
+tile_map_data = PackedByteArray("AAD6/wkAAAAAAAAAAAD7/wkAAAAAAAAAAAD8/wkAAAAAAAAAAAD9/wkAAAAAAAAAAAD9/woAAAAAAAAAAAD9/wsAAAAAAAAAAAD8/wsAAAAAAAAAAAD7/wsAAAAAAAAAAAD6/wsAAAAAAAAAAAD6/woAAAAAAAAAAAD7/woAAAAAAAAAAAD8/woAAAAAAAAAAAD6//n/AAAAAAAAAAD7//n/AAAAAAAAAAD8//n/AAAAAAAAAAD9//n/AAAAAAAAAAD9//r/AAAAAAAAAAD9//v/AAAAAAAAAAD9//z/AAAAAAAAAAD9//3/AAAAAAAAAAD9//7/AAAAAAAAAAD9////AAAAAAAAAAD8////AAAAAAAAAAD7////AAAAAAAAAAD6////AAAAAAAAAAD6//7/AAAAAAAAAAD6//3/AAAAAAAAAAD6//z/AAAAAAAAAAD6//v/AAAAAAAAAAD6//r/AAAAAAAAAAD7//r/AAAAAAAAAAD8//r/AAAAAAAAAAD8//v/AAAAAAAAAAD7//v/AAAAAAAAAAD7//z/AAAAAAAAAAD8//z/AAAAAAAAAAD8//3/AAAAAAAAAAD7//3/AAAAAAAAAAD7//7/AAAAAAAAAAD8//7/AAAAAAAAAAAJAAkAAAAAAAAAAAAKAAkAAAAAAAAAAAALAAkAAAAAAAAAAAAMAAkAAAAAAAAAAAAMAAoAAAAAAAAAAAAMAAsAAAAAAAAAAAALAAsAAAAAAAAAAAAKAAsAAAAAAAAAAAAJAAsAAAAAAAAAAAAJAAoAAAAAAAAAAAAKAAoAAAAAAAAAAAALAAoAAAAAAAAAAAADAPv/AAAAAAAAAAADAPz/AAAAAAAAAAADAP3/AAAAAAAAAAAEAPv/AAAAAAAAAAAEAPz/AAAAAAAAAAAEAP3/AAAAAAAAAAACAPv/AAAAAAAAAAACAPz/AAAAAAAAAAACAP3/AAAAAAAAAAACAPD/AAAAAAAAAAADAPD/AAAAAAAAAAAEAPD/AAAAAAAAAAAEAPH/AAAAAAAAAAAEAPL/AAAAAAAAAAACAPL/AAAAAAAAAAACAPH/AAAAAAAAAAADAPH/AAAAAAAAAAADAPL/AAAAAAAAAAD6/+r/AAAAAAAAAAD7/+r/AAAAAAAAAAD8/+r/AAAAAAAAAAD9/+r/AAAAAAAAAAD9/+v/AAAAAAAAAAD9/+z/AAAAAAAAAAD8/+z/AAAAAAAAAAD7/+z/AAAAAAAAAAD6/+z/AAAAAAAAAAD6/+v/AAAAAAAAAAD7/+v/AAAAAAAAAAD8/+v/AAAAAAAAAAADAOP/AAAAAAAAAAAEAOP/AAAAAAAAAAAFAOP/AAAAAAAAAAAGAOP/AAAAAAAAAAD6/8v/AAAAAAAAAAD7/8v/AAAAAAAAAAD8/8v/AAAAAAAAAAD6/8n/AAAAAAAAAAD6/8r/AAAAAAAAAAD7/8n/AAAAAAAAAAD7/8r/AAAAAAAAAAD8/8n/AAAAAAAAAAD8/8r/AAAAAAAAAAAKAPL/AAAAAAAAAAAKAPP/AAAAAAAAAAAKAPT/AAAAAAAAAAALAPL/AAAAAAAAAAALAPP/AAAAAAAAAAALAPT/AAAAAAAAAAAMAPL/AAAAAAAAAAAMAPP/AAAAAAAAAAAMAPT/AAAAAAAAAAACANj/AAAAAAAAAAADANj/AAAAAAAAAAAEANj/AAAAAAAAAAAFANj/AAAAAAAAAAAAAND/AAAAAAAAAAAAANH/AAAAAAAAAAAAANL/AAAAAAAAAAACANn/AAAAAAAAAAADANn/AAAAAAAAAAAEANn/AAAAAAAAAAAFANn/AAAAAAAAAAAGANn/AAAAAAAAAAAGANj/AAAAAAAAAAD0/7j/AAAAAAAAAAD0/7n/AAAAAAAAAAD0/7r/AAAAAAAAAAD1/7j/AAAAAAAAAAD1/7n/AAAAAAAAAAD1/7r/AAAAAAAAAAD2/7j/AAAAAAAAAAD2/7n/AAAAAAAAAAD2/7r/AAAAAAAAAAAEAL//AAAAAAAAAAAEAMD/AAAAAAAAAAAEAMH/AAAAAAAAAAAEAML/AAAAAAAAAAADALT/AAAAAAAAAAADALX/AAAAAAAAAAAEALX/AAAAAAAAAAAEALT/AAAAAAAAAAAEALb/AAAAAAAAAAAEALf/AAAAAAAAAAAEALj/AAAAAAAAAAADALj/AAAAAAAAAAADALf/AAAAAAAAAAADALb/AAAAAAAAAAAMALf/AAAAAAAAAAALALf/AAAAAAAAAAAKALf/AAAAAAAAAAD6/7L/AAAAAAAAAAD7/7L/AAAAAAAAAAD8/7L/AAAAAAAAAAD6/7P/AAAAAAAAAAD7/7P/AAAAAAAAAAD8/7P/AAAAAAAAAAADAK3/AAAAAAAAAAAEAK3/AAAAAAAAAAAFAK3/AAAAAAAAAAD6/6n/AAAAAAAAAAD7/6n/AAAAAAAAAAD8/6n/AAAAAAAAAAD8/6r/AAAAAAAAAAD7/6r/AAAAAAAAAAD6/6r/AAAAAAAAAAAKAKj/AAAAAAAAAAALAKj/AAAAAAAAAAAMAKj/AAAAAAAAAAAMAKn/AAAAAAAAAAALAKn/AAAAAAAAAAAKAKn/AAAAAAAAAAACAKP/AAAAAAAAAAADAKP/AAAAAAAAAAAEAKP/AAAAAAAAAAABAKP/AAAAAAAAAAD6/5v/AAAAAAAAAAD6/5z/AAAAAAAAAAD6/53/AAAAAAAAAAD7/53/AAAAAAAAAAD8/53/AAAAAAAAAAD9/53/AAAAAAAAAAD8/5z/AAAAAAAAAAD7/5z/AAAAAAAAAAD7/5v/AAAAAAAAAAD8/5v/AwAAAAAAAAD9/5z/AwAAAAAAAAAGAIf/AAAAAAAAAAAHAIf/AAAAAAAAAAAIAIf/AAAAAAAAAAAIAIj/AAAAAAAAAAAIAIn/AAAAAAAAAAAIAIr/AAAAAAAAAAAIAIv/AAAAAAAAAAAHAIv/AAAAAAAAAAAGAIv/AAAAAAAAAAAFAIv/AAAAAAAAAAAFAIr/AAAAAAAAAAAFAIn/AAAAAAAAAAAFAIj/AAAAAAAAAAAFAIf/AAAAAAAAAAAHAIj/AAAAAAAAAAAGAIj/AAAAAAAAAAAGAIn/AAAAAAAAAAAHAIn/AAAAAAAAAAAHAIr/AAAAAAAAAAAGAIr/AAAAAAAAAAAEAIf/AAAAAAAAAAAEAIj/AAAAAAAAAAAEAIn/AAAAAAAAAAAEAIr/AAAAAAAAAAAEAIv/AAAAAAAAAAADAIv/AAAAAAAAAAADAIr/AAAAAAAAAAACAIr/AAAAAAAAAAABAIr/AAAAAAAAAAAAAIr/AAAAAAAAAAD//4r/AAAAAAAAAAD9/4b/AAAAAAAAAAD9/4f/AAAAAAAAAAD9/4j/AAAAAAAAAAD9/4n/AAAAAAAAAAD9/4r/AAAAAAAAAAD+/4b/AAAAAAAAAAD+/4f/AAAAAAAAAAD+/4j/AAAAAAAAAAD+/4n/AAAAAAAAAAD+/4r/AAAAAAAAAAD+/4v/AAAAAAAAAAD//4b/AAAAAAAAAAD//4f/AAAAAAAAAAD//4j/AAAAAAAAAAD//4n/AAAAAAAAAAD//4v/AAAAAAAAAAAAAIb/AAAAAAAAAAAAAIf/AAAAAAAAAAAAAIj/AAAAAAAAAAAAAIn/AAAAAAAAAAAAAIv/AAAAAAAAAAABAIb/AAAAAAAAAAABAIf/AAAAAAAAAAABAIj/AAAAAAAAAAABAIn/AAAAAAAAAAABAIv/AAAAAAAAAAACAIb/AAAAAAAAAAACAIf/AAAAAAAAAAACAIj/AAAAAAAAAAACAIn/AAAAAAAAAAACAIv/AAAAAAAAAAADAIb/AAAAAAAAAAADAIf/AAAAAAAAAAADAIj/AAAAAAAAAAADAIn/AAAAAAAAAAD9/4T/AAAAAAAAAAD9/4X/AAAAAAAAAAD+/4T/AAAAAAAAAAD+/4X/AAAAAAAAAAD//4T/AAAAAAAAAAD//4X/AAAAAAAAAAAAAIT/AAAAAAAAAAAAAIX/AAAAAAAAAAABAIT/AAAAAAAAAAABAIX/AAAAAAAAAAD9/4L/AAAAAAAAAAD9/4P/AAAAAAAAAAD+/4L/AAAAAAAAAAD+/4P/AAAAAAAAAAD//4L/AAAAAAAAAAD//4P/AAAAAAAAAAAAAIL/AAAAAAAAAAAAAIP/AAAAAAAAAAD9/4D/AAAAAAAAAAD9/4H/AAAAAAAAAAD+/4D/AAAAAAAAAAD+/4H/AAAAAAAAAAD9/3//AAAAAAAAAGD//4H/AwAAAAAAAAABAIP/AwAAAAAAAAACAIT/AwAAAAAAAAADAIX/AwAAAAAAAAAEAIb/AwAAAAAAAAACAIX/AAAAAAAAAAAEAHf/AAAAAAAAAAAFAHf/AAAAAAAAAAAGAHf/AAAAAAAAAAAHAHf/AAAAAAAAAAAIAHf/AAAAAAAAAAAJAHf/AAAAAAAAAAAKAHf/AAAAAAAAAAAKAHv/AAAAAAAAAAAJAHv/AAAAAAAAAAAIAHv/AAAAAAAAAAAHAHv/AAAAAAAAAAAGAHv/AAAAAAAAAAAFAHv/AAAAAAAAAAAEAHv/AAAAAAAAAAAEAHr/AAAAAAAAAAAEAHn/AAAAAAAAAAAEAHj/AAAAAAAAAAAFAHj/AAAAAAAAAAAGAHj/AAAAAAAAAAAHAHj/AAAAAAAAAAAIAHj/AAAAAAAAAAAJAHj/AAAAAAAAAAAKAHn/AAAAAAAAAAAJAHn/AAAAAAAAAAAIAHn/AAAAAAAAAAAHAHn/AAAAAAAAAAAGAHn/AAAAAAAAAAAFAHn/AAAAAAAAAAAFAHr/AAAAAAAAAAAGAHr/AAAAAAAAAAAHAHr/AAAAAAAAAAAIAHr/AAAAAAAAAAAJAHr/AAAAAAAAAAAKAHr/AAAAAAAAAAAJAID/AAAAAAAAAAAJAH//AAAAAAAAAAAKAH//AAAAAAAAAAAKAHz/AAAAAAAAAAAKAH3/AAAAAAAAAAAKAH7/AAAAAAAAAAAJAH7/AAAAAAAAAAAJAH3/AAAAAAAAAAAJAHz/AAAAAAAAAAAIAHz/AAAAAAAAAAAIAH3/AAAAAAAAAAAIAH7/AAAAAAAAAAAHAHz/AAAAAAAAAAAHAH3/AAAAAAAAAAAGAHz/AAAAAAAAAAAFAHz/AAAAAAAAAAAGAH3/AAAAAAAAAAAHAH7/AAAAAAAAAAAIAH//AAAAAAAAAAAGAH7/AwAAAAAAADAFAH3/AwAAAAAAADAEAHz/AwAAAAAAADAHAH//AwAAAAAAADAIAID/AwAAAAAAADD9/4v/BAAAAAAAAAD+/2//AAAAAAAAAAD+/3D/AAAAAAAAAAD+/3H/AAAAAAAAAAD+/3L/AAAAAAAAAAAGAGn/AAAAAAAAAAAHAGn/AAAAAAAAAAAIAGn/AAAAAAAAAAAJAGn/AAAAAAAAAAAKAGn/AAAAAAAAAAALAGn/AAAAAAAAAAAMAGn/AAAAAAAAAAAMAGj/AAAAAAAAAAAMAGf/AAAAAAAAAAAMAGb/AAAAAAAAAAALAGb/AAAAAAAAAAAKAGb/AAAAAAAAAAAJAGb/AAAAAAAAAAAIAGb/AAAAAAAAAAAIAGf/AAAAAAAAAAAHAGf/AAAAAAAAAAAHAGj/AAAAAAAAAAAGAGj/AAAAAAAAAAAFAGn/AAAAAAAAAAAIAGj/AAAAAAAAAAAJAGj/AAAAAAAAAAAJAGf/AAAAAAAAAAAKAGf/AAAAAAAAAAALAGf/AAAAAAAAAAALAGj/AAAAAAAAAAAKAGj/AAAAAAAAAAABAFz/AAAAAAAAAAAAAF3/AAAAAAAAAAABAF3/AAAAAAAAAAACAF3/AAAAAAAAAAADAF3/AAAAAAAAAAADAF7/AAAAAAAAAAAEAF//AAAAAAAAAAADAF//AAAAAAAAAAACAF//AAAAAAAAAAABAF//AAAAAAAAAAAAAF//AAAAAAAAAAD//1//AAAAAAAAAAD//17/AAAAAAAAAAAAAF7/AAAAAAAAAAABAF7/AAAAAAAAAAACAF7/AAAAAAAAAAD+/1//AAAAAAAAAAAEAF7/AwAAAAAAAAAFAF//AwAAAAAAAAACAFz/AwAAAAAAAAAAAFz/AwAAAAAAAGD//13/AwAAAAAAAGD+/17/AwAAAAAAAGAHAE7/AAAAAAAAAAAIAE7/AAAAAAAAAAAJAE7/AAAAAAAAAAAJAE//AAAAAAAAAAAJAFD/AAAAAAAAAAAJAFH/AAAAAAAAAAAIAFH/AAAAAAAAAAAHAFH/AAAAAAAAAAAGAFH/AAAAAAAAAAAFAFH/AAAAAAAAAAAIAFD/AAAAAAAAAAAHAFD/AAAAAAAAAAAGAFD/AAAAAAAAAAAIAE//AAAAAAAAAAAHAE//AAAAAAAAAAAFAFD/AwAAAAAAAGAGAE//AwAAAAAAAGD9/0z/AAAAAAAAAAD9/03/AAAAAAAAAAD9/07/AAAAAAAAAAAJAEX/AAAAAAAAAAAKAEX/AAAAAAAAAAALAEX/AAAAAAAAAAAMAEX/AAAAAAAAAAAMAEb/AAAAAAAAAAALAEb/AAAAAAAAAAAKAEb/AAAAAAAAAAAJAEb/AAAAAAAAAAD+/zv/AAAAAAAAAAABADv/AAAAAAAAAAAIAD3/AAAAAAAAAAAEADv/AAAAAAAAAAD7/zv/AAAAAAAAAAD+/zP/AAAAAAAAAAD//zP/AAAAAAAAAAAAADP/AAAAAAAAAAABADP/AAAAAAAAAAACADP/AAAAAAAAAAADADP/AAAAAAAAAAAEADP/AAAAAAAAAAAEADT/AAAAAAAAAAAEADX/AAAAAAAAAAAEADb/AAAAAAAAAAADADb/AAAAAAAAAAACADb/AAAAAAAAAAABADb/AAAAAAAAAAAAADb/AAAAAAAAAAD//zb/AAAAAAAAAAD+/zb/AAAAAAAAAAD+/zX/AAAAAAAAAAD+/zT/AAAAAAAAAAD//zT/AAAAAAAAAAADADT/AAAAAAAAAAADADX/AAAAAAAAAAACADT/AAAAAAAAAAABADT/AAAAAAAAAAAAADT/AAAAAAAAAAD//zX/AAAAAAAAAAAAADX/AAAAAAAAAAABADX/AAAAAAAAAAACADX/AAAAAAAAAAAFADP/AAAAAAAAAAAGADP/AAAAAAAAAAAHADP/AAAAAAAAAAAIADP/AAAAAAAAAAAJADP/AAAAAAAAAAAKADP/AAAAAAAAAAALADP/AAAAAAAAAAAMADP/AAAAAAAAAAAMADT/AAAAAAAAAAAMADX/AAAAAAAAAAAMADb/AAAAAAAAAAALADb/AAAAAAAAAAAKADb/AAAAAAAAAAAJADb/AAAAAAAAAAAIADb/AAAAAAAAAAAHADb/AAAAAAAAAAAGADb/AAAAAAAAAAAFADb/AAAAAAAAAAAFADX/AAAAAAAAAAAFADT/AAAAAAAAAAAGADT/AAAAAAAAAAAHADT/AAAAAAAAAAAIADT/AAAAAAAAAAAJADT/AAAAAAAAAAAKADT/AAAAAAAAAAALADT/AAAAAAAAAAALADX/AAAAAAAAAAAKADX/AAAAAAAAAAAJADX/AAAAAAAAAAAIADX/AAAAAAAAAAAHADX/AAAAAAAAAAAGADX/AAAAAAAAAAAMACn/AAAAAAAAAAALACn/AAAAAAAAAAAKACn/AAAAAAAAAAAJACn/AAAAAAAAAAAIACn/AAAAAAAAAAAHACn/AAAAAAAAAAAGACn/AAAAAAAAAAAMACr/AAAAAAAAAAALACr/AAAAAAAAAAAKACr/AAAAAAAAAAAJACr/AAAAAAAAAAAIACr/AAAAAAAAAAAHACr/AAAAAAAAAAAGACr/AAAAAAAAAAAFACr/AAAAAAAAAAAEACr/AAAAAAAAAAADACr/AAAAAAAAAAACACr/AAAAAAAAAAABACr/AAAAAAAAAAAAACr/AAAAAAAAAAD//yr/AAAAAAAAAAD+/yr/AAAAAAAAAAD9/yr/AAAAAAAAAAD8/yr/AAAAAAAAAAD7/yr/AAAAAAAAAAD6/yr/AAAAAAAAAAD6/yn/AAAAAAAAAAD7/yn/AAAAAAAAAAD8/yn/AAAAAAAAAAD9/yn/AAAAAAAAAAD+/yn/AAAAAAAAAAD//yn/AAAAAAAAAAAAACn/AAAAAAAAAAABACn/AAAAAAAAAAACACn/AAAAAAAAAAADACn/AAAAAAAAAAAEACn/AAAAAAAAAAAFACn/AAAAAAAAAAD6/yP/AAAAAAAAAAD6/yT/AAAAAAAAAAD6/yX/AAAAAAAAAAD6/yb/AAAAAAAAAAD6/yf/AAAAAAAAAAD6/yj/AAAAAAAAAAD7/yP/AAAAAAAAAAD7/yT/AAAAAAAAAAD7/yX/AAAAAAAAAAD7/yb/AAAAAAAAAAD7/yf/AAAAAAAAAAD7/yj/AAAAAAAAAAD8/yP/AAAAAAAAAAD8/yT/AAAAAAAAAAD8/yX/AAAAAAAAAAD8/yb/AAAAAAAAAAD8/yf/AAAAAAAAAAD8/yj/AAAAAAAAAAD9/yP/AAAAAAAAAAD9/yT/AAAAAAAAAAD9/yX/AAAAAAAAAAD9/yb/AAAAAAAAAAD9/yf/AAAAAAAAAAD9/yj/AAAAAAAAAAD+/yP/AAAAAAAAAAD+/yT/AAAAAAAAAAD+/yX/AAAAAAAAAAD+/yb/AAAAAAAAAAD+/yf/AAAAAAAAAAD+/yj/AAAAAAAAAAD//yP/AAAAAAAAAAD//yT/AAAAAAAAAAD//yX/AAAAAAAAAAD//yb/AAAAAAAAAAD//yf/AAAAAAAAAAD//yj/AAAAAAAAAAAAACP/AAAAAAAAAAAAACT/AAAAAAAAAAAAACX/AAAAAAAAAAAAACb/AAAAAAAAAAAAACf/AAAAAAAAAAAAACj/AAAAAAAAAAABACP/AAAAAAAAAAABACT/AAAAAAAAAAABACX/AAAAAAAAAAABACb/AAAAAAAAAAABACf/AAAAAAAAAAABACj/AAAAAAAAAAACACP/AAAAAAAAAAACACT/AAAAAAAAAAACACX/AAAAAAAAAAACACb/AAAAAAAAAAACACf/AAAAAAAAAAACACj/AAAAAAAAAAADACP/AAAAAAAAAAADACT/AAAAAAAAAAADACX/AAAAAAAAAAADACb/AAAAAAAAAAADACf/AAAAAAAAAAADACj/AAAAAAAAAAAEACP/AAAAAAAAAAAEACT/AAAAAAAAAAAEACX/AAAAAAAAAAAEACb/AAAAAAAAAAAEACf/AAAAAAAAAAAEACj/AAAAAAAAAAAFACP/AAAAAAAAAAAFACT/AAAAAAAAAAAFACX/AAAAAAAAAAAFACb/AAAAAAAAAAAFACf/AAAAAAAAAAAFACj/AAAAAAAAAAAGACP/AAAAAAAAAAAGACT/AAAAAAAAAAAGACX/AAAAAAAAAAAGACb/AAAAAAAAAAAGACf/AAAAAAAAAAAGACj/AAAAAAAAAAAHACP/AAAAAAAAAAAHACT/AAAAAAAAAAAHACX/AAAAAAAAAAAHACb/AAAAAAAAAAAHACf/AAAAAAAAAAAHACj/AAAAAAAAAAAIACP/AAAAAAAAAAAIACT/AAAAAAAAAAAIACX/AAAAAAAAAAAIACb/AAAAAAAAAAAIACf/AAAAAAAAAAAIACj/AAAAAAAAAAAJACP/AAAAAAAAAAAJACT/AAAAAAAAAAAJACX/AAAAAAAAAAAJACb/AAAAAAAAAAAJACf/AAAAAAAAAAAJACj/AAAAAAAAAAAKACP/AAAAAAAAAAAKACT/AAAAAAAAAAAKACX/AAAAAAAAAAAKACb/AAAAAAAAAAAKACf/AAAAAAAAAAAKACj/AAAAAAAAAAALACP/AAAAAAAAAAALACT/AAAAAAAAAAALACX/AAAAAAAAAAALACb/AAAAAAAAAAALACf/AAAAAAAAAAALACj/AAAAAAAAAAAMACP/AAAAAAAAAAAMACT/AAAAAAAAAAAMACX/AAAAAAAAAAAMACb/AAAAAAAAAAAMACf/AAAAAAAAAAAMACj/AAAAAAAAAAA=")
+tile_set = SubResource("TileSet_h6dv8")
+
+[node name="TileMapLayer2" type="TileMapLayer" parent="."]
+scale = Vector2(0.15, 0.15)
+tile_map_data = PackedByteArray("AAAHAMj/AQAAAAAAAAAHAMn/AgAAAAAAAAAHAMr/BAAAAAAAAAAIAMj/AgAAAAAAAAAIAMn/AQAAAAAAAAAIAMr/AgAAAAAAAAAIAMv/BAAAAAAAAAAJAMj/AgAAAAAAAAAJAMn/AgAAAAAAAAAJAMr/AgAAAAAAAAAJAMv/AgAAAAAAAAAJAMz/BAAAAAAAAAAKAMj/AgAAAAAAAAAKAMn/AgAAAAAAAAAKAMr/AgAAAAAAAAAKAMv/AQAAAAAAAAAKAMz/AgAAAAAAAAAKAM3/BAAAAAAAAAALAMj/AgAAAAAAAAALAMn/AgAAAAAAAAALAMr/AgAAAAAAAAALAMv/AQAAAAAAAAALAMz/AgAAAAAAAAALAM3/AgAAAAAAAAALAM7/BAAAAAAAAAAHAMf/AgAAAAAAAAAIAMf/AgAAAAAAAAAJAMf/AgAAAAAAAAAKAMf/AgAAAAAAAAALAMf/AgAAAAAAAAA=")
+tile_set = SubResource("TileSet_0o2m4")
+
+[node name="Screen 7" type="Node2D" parent="."]
+
+[node name="1" type="Node2D" parent="Screen 7"]
+
+[node name="LavaGroundShapeSides60" type="Sprite2D" parent="Screen 7/1"]
+position = Vector2(976.9, -9683.1)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 7/1/LavaGroundShapeSides60"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 7/1/LavaGroundShapeSides60/StaticBody2D"]
+position = Vector2(-36.3335, 188.667)
+shape = SubResource("RectangleShape2D_jsw1j")
+
+[node name="LavaGroundShapeSides62" type="Sprite2D" parent="Screen 7/1"]
+position = Vector2(885, -9622)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2159, 60, 572, 182)
+
+[node name="LavaGroundShapeSides63" type="Sprite2D" parent="Screen 7/1"]
+position = Vector2(974.9, -9563.1)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="2" type="Node2D" parent="Screen 7"]
+position = Vector2(-5, -431)
+
+[node name="LavaGroundShapeSides22" type="Sprite2D" parent="Screen 7/2"]
+position = Vector2(604.25, -9793.1)
+scale = Vector2(0.327586, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2300, 573, 319, 150)
+
+[node name="LavaGroundShapeSides32" type="Sprite2D" parent="Screen 7/2"]
+position = Vector2(651.25, -9821.1)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(2271, 322, 300, 149)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 7/2/LavaGroundShapeSides32"]
+position = Vector2(-6.66656, 30)
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 7/2/LavaGroundShapeSides32/StaticBody2D"]
+position = Vector2(103.333, -10.0078)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_i06fp")
+
+[node name="LavaGroundShapeSides30" type="Sprite2D" parent="Screen 7/2"]
+position = Vector2(561, -9821.1)
+rotation = 1.5708
+scale = Vector2(0.306818, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2287, 815, 321, 160)
+
+[node name="LavaGroundShapeSides31" type="Sprite2D" parent="Screen 7/2"]
+position = Vector2(607, -9852.8)
+scale = Vector2(0.175175, 0.2)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(2159, 60, 572, 182)
+
+[node name="LavaGroundShapeSides23" type="Sprite2D" parent="Screen 7/2"]
+position = Vector2(837, -9672.1)
+scale = Vector2(0.327586, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2300, 573, 319, 150)
+
+[node name="LavaGroundShapeSides33" type="Sprite2D" parent="Screen 7/2"]
+position = Vector2(884, -9700.1)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(2271, 322, 300, 149)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 7/2/LavaGroundShapeSides33"]
+position = Vector2(-6.66656, 30)
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 7/2/LavaGroundShapeSides33/StaticBody2D"]
+position = Vector2(103.333, -10.0078)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_i06fp")
+
+[node name="LavaGroundShapeSides34" type="Sprite2D" parent="Screen 7/2"]
+position = Vector2(807, -9698.1)
+rotation = 1.5708
+scale = Vector2(0.306818, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2287, 815, 321, 160)
+
+[node name="LavaGroundShapeSides35" type="Sprite2D" parent="Screen 7/2"]
+position = Vector2(839.751, -9731.8)
+scale = Vector2(0.175175, 0.2)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(2159, 60, 572, 182)
+
+[node name="3" type="Node2D" parent="Screen 7"]
+position = Vector2(-222, -430)
+
+[node name="LavaGroundShapeSides22" type="Sprite2D" parent="Screen 7/3"]
+position = Vector2(644, -9794.1)
+scale = Vector2(0.327586, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2300, 573, 319, 150)
+
+[node name="LavaGroundShapeSides32" type="Sprite2D" parent="Screen 7/3"]
+position = Vector2(682, -9824.1)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(2271, 322, 300, 149)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 7/3/LavaGroundShapeSides32"]
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 7/3/LavaGroundShapeSides32/StaticBody2D"]
+position = Vector2(116.667, -10.3367)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_i06fp")
+
+[node name="LavaGroundShapeSides30" type="Sprite2D" parent="Screen 7/3"]
+position = Vector2(614, -9820.1)
+rotation = 1.5708
+scale = Vector2(0.306818, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2287, 815, 321, 160)
+
+[node name="LavaGroundShapeSides31" type="Sprite2D" parent="Screen 7/3"]
+position = Vector2(646.751, -9853.8)
+scale = Vector2(0.175175, 0.2)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(2159, 60, 572, 182)
+
+[node name="4" type="Node2D" parent="Screen 7"]
+position = Vector2(-417, -428)
+
+[node name="LavaGroundShapeSides22" type="Sprite2D" parent="Screen 7/4"]
+position = Vector2(659, -9795.1)
+scale = Vector2(0.327586, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2300, 573, 319, 150)
+
+[node name="LavaGroundShapeSides32" type="Sprite2D" parent="Screen 7/4"]
+position = Vector2(697, -9825.1)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(2271, 322, 300, 149)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 7/4/LavaGroundShapeSides32"]
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 7/4/LavaGroundShapeSides32/StaticBody2D"]
+position = Vector2(126.668, 6.3301)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_i06fp")
+
+[node name="LavaGroundShapeSides30" type="Sprite2D" parent="Screen 7/4"]
+position = Vector2(629, -9821.1)
+rotation = 1.5708
+scale = Vector2(0.306818, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2287, 815, 321, 160)
+
+[node name="LavaGroundShapeSides31" type="Sprite2D" parent="Screen 7/4"]
+position = Vector2(661.751, -9854.8)
+scale = Vector2(0.175175, 0.2)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(2159, 60, 572, 182)
+
+[node name="LavaGroundShapeSides23" type="Sprite2D" parent="Screen 7/4"]
+position = Vector2(481, -9797.1)
+scale = Vector2(0.327586, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2300, 573, 319, 150)
+
+[node name="LavaGroundShapeSides33" type="Sprite2D" parent="Screen 7/4"]
+position = Vector2(519, -9827.1)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(2271, 322, 300, 149)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 7/4/LavaGroundShapeSides33"]
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 7/4/LavaGroundShapeSides33/StaticBody2D"]
+position = Vector2(126.668, 6.3301)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_i06fp")
+
+[node name="LavaGroundShapeSides34" type="Sprite2D" parent="Screen 7/4"]
+position = Vector2(451, -9823.1)
+rotation = 1.5708
+scale = Vector2(0.306818, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2287, 815, 321, 160)
+
+[node name="LavaGroundShapeSides35" type="Sprite2D" parent="Screen 7/4"]
+position = Vector2(483.75, -9856.8)
+scale = Vector2(0.175175, 0.2)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(2159, 60, 572, 182)
+
+[node name="5" type="Node2D" parent="Screen 7"]
+position = Vector2(-64, -1860)
+
+[node name="LavaGroundShapeSides23" type="Sprite2D" parent="Screen 7/5"]
+position = Vector2(350, -8627)
+scale = Vector2(0.225, 0.257)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides24" type="Sprite2D" parent="Screen 7/5"]
+position = Vector2(493, -8629)
+scale = Vector2(0.225, 0.257)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides25" type="Sprite2D" parent="Screen 7/5"]
+position = Vector2(622, -8631)
+scale = Vector2(0.225, 0.257)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides26" type="Sprite2D" parent="Screen 7/5"]
+position = Vector2(739, -8631)
+scale = Vector2(0.225, 0.257)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides27" type="Sprite2D" parent="Screen 7/5"]
+position = Vector2(853, -8631)
+scale = Vector2(0.225, 0.257)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides28" type="Sprite2D" parent="Screen 7/5"]
+position = Vector2(965, -8631)
+scale = Vector2(0.225, 0.257)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides29" type="Sprite2D" parent="Screen 7/5"]
+position = Vector2(1078, -8631)
+scale = Vector2(0.225, 0.257)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides34" type="Sprite2D" parent="Screen 7/5"]
+position = Vector2(271, -8706)
+rotation = 1.5708
+scale = Vector2(0.225, 0.257)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(189, 563, 773, 166)
+
+[node name="LavaGroundShapeSides39" type="Sprite2D" parent="Screen 7/5"]
+position = Vector2(271, -8811)
+rotation = 1.5708
+scale = Vector2(0.225, 0.257)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(189, 563, 773, 166)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 7/5/LavaGroundShapeSides39"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 7/5/LavaGroundShapeSides39/StaticBody2D"]
+position = Vector2(231.102, -1653.7)
+shape = SubResource("RectangleShape2D_uyyjv")
+
+[node name="LavaGroundShapeSides35" type="Sprite2D" parent="Screen 7/5"]
+position = Vector2(363, -8882)
+scale = Vector2(0.225, 0.257)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="LavaGroundShapeSides36" type="Sprite2D" parent="Screen 7/5"]
+position = Vector2(491, -8884)
+scale = Vector2(0.225, 0.257)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="LavaGroundShapeSides37" type="Sprite2D" parent="Screen 7/5"]
+position = Vector2(637, -8885)
+scale = Vector2(0.225, 0.257)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="LavaGroundShapeSides38" type="Sprite2D" parent="Screen 7/5"]
+position = Vector2(777, -8887)
+scale = Vector2(0.225, 0.257)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="LavaGroundShapeSides40" type="Sprite2D" parent="Screen 7/5"]
+position = Vector2(915, -8887)
+scale = Vector2(0.225, 0.257)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="LavaGroundShapeSides41" type="Sprite2D" parent="Screen 7/5"]
+z_index = 2
+position = Vector2(1055, -8887)
+scale = Vector2(0.225, 0.257)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="Screen 6" type="Node2D" parent="."]
+
+[node name="1" type="Node2D" parent="Screen 6"]
+
+[node name="LavaGroundShapeSides61" type="Sprite2D" parent="Screen 6/1"]
+position = Vector2(440.63, -8335.37)
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2287, 815, 321, 160)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 6/1/LavaGroundShapeSides61"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Screen 6/1/LavaGroundShapeSides61/StaticBody2D"]
+polygon = PackedVector2Array(-146.152, -4.36914, 152.868, -4.36914, 607.843, 522.787, 583.333, 619.303, -556.372, 621.982, -604.486, 531.824)
+
+[node name="LavaGroundShapeSides57" type="Sprite2D" parent="Screen 6/1"]
+position = Vector2(344.63, -8114.37)
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides58" type="Sprite2D" parent="Screen 6/1"]
+position = Vector2(546.63, -8111.37)
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides59" type="Sprite2D" parent="Screen 6/1"]
+position = Vector2(593.63, -8240.37)
+rotation = -2.35619
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides60" type="Sprite2D" parent="Screen 6/1"]
+position = Vector2(294.63, -8249.37)
+rotation = -0.785398
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="2" type="Node2D" parent="Screen 6"]
+
+[node name="LavaEnvironment12" type="Sprite2D" parent="Screen 6/2"]
+position = Vector2(94.1221, -8638.05)
+rotation = 0.0482459
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_quqf4")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(1284, 356, 329, 145)
+
+[node name="LavaGroundShapeSides16" type="Sprite2D" parent="Screen 6/2"]
+position = Vector2(224.122, -8640.05)
+scale = Vector2(0.286538, 0.354302)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(2159, 60, 572, 182)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 6/2/LavaGroundShapeSides16"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 6/2/LavaGroundShapeSides16/StaticBody2D"]
+position = Vector2(-2.17072, 18.4805)
+shape = SubResource("RectangleShape2D_yljfh")
+
+[node name="LavaEnvironment15" type="Sprite2D" parent="Screen 6/2"]
+position = Vector2(1.62806, -8643.57)
+rotation = 0.0683944
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_quqf4")
+region_enabled = true
+region_rect = Rect2(1284, 356, 329, 145)
+
+[node name="3" type="Node2D" parent="Screen 6"]
+
+[node name="LavaGroundShapeSides58" type="Sprite2D" parent="Screen 6/3"]
+position = Vector2(948, -9065)
+rotation = -1.5708
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(1375, 563, 542, 166)
+
+[node name="LavaGroundShapeSides62" type="Sprite2D" parent="Screen 6/3"]
+position = Vector2(908, -8948)
+rotation = -0.759218
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2271, 322, 300, 149)
+
+[node name="LavaGroundShapeSides59" type="Sprite2D" parent="Screen 6/3"]
+position = Vector2(909, -9040)
+rotation = -1.5708
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(1375, 563, 542, 166)
+
+[node name="LavaGroundShapeSides60" type="Sprite2D" parent="Screen 6/3"]
+position = Vector2(685.63, -9062.37)
+rotation = -0.785398
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides61" type="Sprite2D" parent="Screen 6/3"]
+position = Vector2(841.63, -9146.37)
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(2159, 60, 572, 182)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 6/3/LavaGroundShapeSides61"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Screen 6/3/LavaGroundShapeSides61/StaticBody2D"]
+polygon = PackedVector2Array(-153.505, -25.8164, 277.867, -23.1367, 280.318, 515.738, 133.26, 628.338, -556.372, 621.982, -604.486, 531.824)
+
+[node name="LavaGroundShapeSides57" type="Sprite2D" parent="Screen 6/3"]
+position = Vector2(735.63, -8927.37)
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="4" type="Node2D" parent="Screen 6"]
+
+[node name="LavaGroundShapeSides27" type="Sprite2D" parent="Screen 6/4"]
+position = Vector2(223.9, -9086.1)
+scale = Vector2(0.327586, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2300, 573, 319, 150)
+
+[node name="LavaGroundShapeSides61" type="Sprite2D" parent="Screen 6/4"]
+position = Vector2(178.65, -9190.1)
+rotation = 1.5708
+scale = Vector2(0.397351, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(1359, 804, 555, 171)
+
+[node name="LavaGroundShapeSides62" type="Sprite2D" parent="Screen 6/4"]
+position = Vector2(215.75, -9290.7)
+scale = Vector2(0.175175, 0.2)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(2159, 60, 572, 182)
+
+[node name="LavaGroundShapeSides63" type="Sprite2D" parent="Screen 6/4"]
+position = Vector2(243.65, -9192.1)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 6/4/LavaGroundShapeSides63"]
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 6/4/LavaGroundShapeSides63/StaticBody2D"]
+position = Vector2(85.4962, -15.3359)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_thkuw")
+debug_color = Color(1.44392e-06, 0.60085, 0.695081, 0.42)
+
+[node name="Screen 5" type="Node2D" parent="."]
+
+[node name="2" type="Node2D" parent="Screen 5"]
+
+[node name="LavaGroundShapeSides49" type="Sprite2D" parent="Screen 5/2"]
+position = Vector2(900, -6185)
+scale = Vector2(0.408, 0.373997)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2287, 815, 321, 160)
+
+[node name="LavaGroundShapeSides56" type="Sprite2D" parent="Screen 5/2"]
+position = Vector2(909, -6223)
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2271, 322, 300, 149)
+
+[node name="LavaGroundShapeSides50" type="Sprite2D" parent="Screen 5/2"]
+position = Vector2(783, -6266)
+rotation = 0.785398
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides54" type="Sprite2D" parent="Screen 5/2"]
+position = Vector2(585, -6650)
+rotation = 1.5708
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides55" type="Sprite2D" parent="Screen 5/2"]
+position = Vector2(962, -6652)
+rotation = 1.5708
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides57" type="Sprite2D" parent="Screen 5/2"]
+position = Vector2(914, -6652)
+rotation = 1.5708
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides61" type="Sprite2D" parent="Screen 5/2"]
+position = Vector2(962, -6380)
+rotation = 1.5708
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides62" type="Sprite2D" parent="Screen 5/2"]
+position = Vector2(914, -6380)
+rotation = 1.5708
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides51" type="Sprite2D" parent="Screen 5/2"]
+position = Vector2(638, -6411)
+rotation = 0.785398
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides52" type="Sprite2D" parent="Screen 5/2"]
+position = Vector2(541, -6644)
+rotation = 1.5708
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides53" type="Sprite2D" parent="Screen 5/2"]
+position = Vector2(744, -6781)
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 5/2/LavaGroundShapeSides53"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Screen 5/2/LavaGroundShapeSides53/StaticBody2D"]
+position = Vector2(-41.6667, -21.449)
+polygon = PackedVector2Array(-453.431, -16.0859, -468.137, 750.668, 308.824, 1659.52, 504.902, 1667.56, 568.627, 1557.64, 612.745, 1455.76, 598.039, 18.7656, 526.961, -16.084)
+one_way_collision_margin = 0.0
+
+[node name="1" type="Node2D" parent="Screen 5"]
+position = Vector2(696.801, -5561.1)
+scale = Vector2(0.408, 0.373)
+
+[node name="LavaGroundShapeSides38" type="Sprite2D" parent="Screen 5/1"]
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides39" type="Sprite2D" parent="Screen 5/1"]
+position = Vector2(-629.414, 2.9502)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides41" type="Sprite2D" parent="Screen 5/1"]
+position = Vector2(-906.375, 2.94952)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides49" type="Sprite2D" parent="Screen 5/1"]
+position = Vector2(-1274.02, -358.981)
+rotation = 1.5708
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides50" type="Sprite2D" parent="Screen 5/1"]
+position = Vector2(-1278.92, -991.689)
+rotation = 1.5708
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides51" type="Sprite2D" parent="Screen 5/1"]
+position = Vector2(-1278.92, -1643.16)
+rotation = 1.5708
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides46" type="Sprite2D" parent="Screen 5/1"]
+position = Vector2(-952.944, -1664.61)
+rotation = 0.830183
+scale = Vector2(1.04797, 0.958068)
+skew = -0.0895689
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides48" type="Sprite2D" parent="Screen 5/1"]
+position = Vector2(-528.925, -1165.95)
+rotation = 0.830183
+scale = Vector2(1.04797, 0.958068)
+skew = -0.0895689
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides40" type="Sprite2D" parent="Screen 5/1"]
+position = Vector2(117.647, -713.137)
+scale = Vector2(0.735294, 0.80429)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="LavaGroundShapeSides42" type="Sprite2D" parent="Screen 5/1"]
+position = Vector2(-313.238, -989.008)
+rotation = 0.830182
+scale = Vector2(0.770564, 0.770564)
+skew = -0.0895687
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="LavaGroundShapeSides43" type="Sprite2D" parent="Screen 5/1"]
+position = Vector2(-663.728, -1372.39)
+rotation = 0.830182
+scale = Vector2(0.770564, 0.770564)
+skew = -0.0895687
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="LavaGroundShapeSides44" type="Sprite2D" parent="Screen 5/1"]
+position = Vector2(-911.277, -1675.33)
+rotation = 0.830182
+scale = Vector2(0.770564, 0.770564)
+skew = -0.0895687
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="LavaGroundShapeSides45" type="Sprite2D" parent="Screen 5/1"]
+position = Vector2(-1212.75, -1978.26)
+scale = Vector2(0.735294, 0.80429)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2271, 322, 300, 149)
+
+[node name="LavaGroundShapeSides47" type="Sprite2D" parent="Screen 5/1"]
+position = Vector2(345.588, -361.93)
+rotation = 1.5708
+scale = Vector2(0.80429, 0.735294)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 5/1/LavaGroundShapeSides47"]
+rotation = 1.5708
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Screen 5/1/LavaGroundShapeSides47/StaticBody2D"]
+position = Vector2(-60.664, -76.9999)
+polygon = PackedVector2Array(2160, -426.682, 19.9971, -410.002, 26.6707, 536.664, 613.337, 536.662, 2083.35, 2083.32, 2286.68, 2083.32, 2300, -353.352)
+
+[node name="3" type="Node2D" parent="Screen 5"]
+
+[node name="LavaGroundShapeSides26" type="Sprite2D" parent="Screen 5/3"]
+position = Vector2(255.9, -7020.1)
+scale = Vector2(0.327586, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2300, 573, 319, 150)
+
+[node name="LavaGroundShapeSides58" type="Sprite2D" parent="Screen 5/3"]
+position = Vector2(210.65, -7124.1)
+rotation = 1.5708
+scale = Vector2(0.397351, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(1359, 804, 555, 171)
+
+[node name="LavaGroundShapeSides59" type="Sprite2D" parent="Screen 5/3"]
+position = Vector2(247.75, -7224.7)
+scale = Vector2(0.175175, 0.2)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(2159, 60, 572, 182)
+
+[node name="LavaGroundShapeSides60" type="Sprite2D" parent="Screen 5/3"]
+position = Vector2(275.65, -7126.1)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 5/3/LavaGroundShapeSides60"]
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 5/3/LavaGroundShapeSides60/StaticBody2D"]
+position = Vector2(85.4962, -15.3359)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_thkuw")
+debug_color = Color(1.44392e-06, 0.60085, 0.695081, 0.42)
+
+[node name="4" type="Node2D" parent="Screen 5"]
+position = Vector2(1, 0)
+
+[node name="LavaGroundShapeSides52" type="Sprite2D" parent="Screen 5/4"]
+position = Vector2(947.362, -7546.29)
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides53" type="Sprite2D" parent="Screen 5/4"]
+position = Vector2(696.362, -7545.29)
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides54" type="Sprite2D" parent="Screen 5/4"]
+position = Vector2(671.63, -7658.37)
+rotation = 2.35619
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides55" type="Sprite2D" parent="Screen 5/4"]
+position = Vector2(716.63, -7644.37)
+rotation = 2.35619
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(189, 563, 773, 166)
+
+[node name="LavaGroundShapeSides56" type="Sprite2D" parent="Screen 5/4"]
+position = Vector2(959.63, -7743.37)
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 5/4/LavaGroundShapeSides56"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Screen 5/4/LavaGroundShapeSides56/StaticBody2D"]
+polygon = PackedVector2Array(282.77, -39.2227, 274.51, 563.002, -892.157, 563.002, -965.686, 490.615, -489.289, -39.2227)
+
+[node name="Screen 4" type="Node2D" parent="."]
+
+[node name="LavaGroundShapeSides54" type="Sprite2D" parent="Screen 4"]
+position = Vector2(405.5, -4183.1)
+rotation = 1.5708
+scale = Vector2(0.334785, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(2300, 573, 319, 150)
+
+[node name="LavaGroundShapeSides55" type="Sprite2D" parent="Screen 4"]
+position = Vector2(608.5, -4184.1)
+rotation = 1.5708
+scale = Vector2(0.334785, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2300, 573, 319, 150)
+
+[node name="LavaGroundShapeSides56" type="Sprite2D" parent="Screen 4"]
+position = Vector2(504.5, -4156.1)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="LavaGroundShapeSides57" type="Sprite2D" parent="Screen 4"]
+position = Vector2(506.5, -4219.1)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 4/LavaGroundShapeSides57"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 4/LavaGroundShapeSides57/StaticBody2D"]
+position = Vector2(0, 110.333)
+shape = SubResource("RectangleShape2D_osvat")
+
+[node name="LavaGroundShapeSides48" type="Sprite2D" parent="Screen 4"]
+position = Vector2(38.9, -3879.1)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 4/LavaGroundShapeSides48"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 4/LavaGroundShapeSides48/StaticBody2D"]
+position = Vector2(70.3333, 193.668)
+shape = SubResource("RectangleShape2D_mksxc")
+
+[node name="LavaGroundShapeSides58" type="Sprite2D" parent="Screen 4"]
+z_index = 1
+position = Vector2(28, -4663)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 4/LavaGroundShapeSides58"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Screen 4/LavaGroundShapeSides58/StaticBody2D"]
+position = Vector2(-23.3333, -26.6667)
+polygon = PackedVector2Array(360, -6.66602, 766.667, 433.335, 806.667, 536.667, -6.66668, 533.334, -3.33337, -6.66602)
+
+[node name="LavaGroundShapeSides59" type="Sprite2D" parent="Screen 4"]
+position = Vector2(179, -4596)
+rotation = 0.82205
+scale = Vector2(0.297472, 0.40265)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(189, 563, 773, 166)
+
+[node name="LavaGroundShapeSides61" type="Sprite2D" parent="Screen 4"]
+position = Vector2(-51, -4518)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(189, 563, 773, 166)
+
+[node name="LavaGroundShapeSides49" type="Sprite2D" parent="Screen 4"]
+position = Vector2(134.9, -3821.1)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(2159, 60, 572, 182)
+
+[node name="LavaGroundShapeSides50" type="Sprite2D" parent="Screen 4"]
+position = Vector2(36.9, -3759.1)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="LavaGroundShapeSides51" type="Sprite2D" parent="Screen 4"]
+position = Vector2(996.9, -3913.1)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 4/LavaGroundShapeSides51"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 4/LavaGroundShapeSides51/StaticBody2D"]
+position = Vector2(-36.3335, 188.667)
+shape = SubResource("RectangleShape2D_jsw1j")
+
+[node name="LavaGroundShapeSides52" type="Sprite2D" parent="Screen 4"]
+position = Vector2(905, -3852)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2159, 60, 572, 182)
+
+[node name="LavaGroundShapeSides53" type="Sprite2D" parent="Screen 4"]
+position = Vector2(994.9, -3793.1)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="LavaGroundShapeSidesAlt" type="Sprite2D" parent="Screen 4"]
+position = Vector2(995, -4606)
+rotation = 0.785398
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_la8hy")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(27, 30, 992, 213)
+
+[node name="LavaGroundShapeSidesAlt2" type="Sprite2D" parent="Screen 4"]
+position = Vector2(826.81, -4773.05)
+rotation = 0.785397
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_la8hy")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(27, 30, 992, 213)
+
+[node name="LavaGroundShapeSidesAlt3" type="Sprite2D" parent="Screen 4"]
+position = Vector2(725.81, -4882.05)
+rotation = 0.785397
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_la8hy")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(27, 30, 992, 213)
+
+[node name="LavaGroundShapeSidesAlt4" type="Sprite2D" parent="Screen 4"]
+position = Vector2(643.81, -5087.05)
+rotation = 1.57079
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_la8hy")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(27, 30, 992, 213)
+
+[node name="LavaGroundShapeSidesAlt5" type="Sprite2D" parent="Screen 4"]
+z_index = 1
+position = Vector2(766.81, -5210.05)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_la8hy")
+region_enabled = true
+region_rect = Rect2(27, 30, 992, 213)
+
+[node name="LavaGroundShapeSidesAlt6" type="Sprite2D" parent="Screen 4"]
+z_index = 1
+position = Vector2(974, -5209)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_la8hy")
+region_enabled = true
+region_rect = Rect2(27, 30, 992, 213)
+
+[node name="LavaGroundShapeSidesAlt7" type="Sprite2D" parent="Screen 4"]
+position = Vector2(805.81, -5269.05)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_la8hy")
+region_enabled = true
+region_rect = Rect2(27, 30, 992, 213)
+
+[node name="LavaGroundShapeSidesAlt8" type="Sprite2D" parent="Screen 4"]
+position = Vector2(1006, -5268)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_la8hy")
+region_enabled = true
+region_rect = Rect2(27, 30, 992, 213)
+
+[node name="LavaGroundShapeSidesAlt9" type="Sprite2D" parent="Screen 4"]
+position = Vector2(786.81, -5238.05)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("3_la8hy")
+region_enabled = true
+region_rect = Rect2(37, 312, 941, 154)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 4/LavaGroundShapeSidesAlt9"]
+position = Vector2(-2248.03, 14965.9)
+scale = Vector2(2.85714, 2.85714)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Screen 4/LavaGroundShapeSidesAlt9/StaticBody2D"]
+position = Vector2(-6, -113)
+polygon = PackedVector2Array(641, -5140, 1073, -5140, 1077, -4407, 634, -4845)
+
+[node name="LavaGroundShapeSidesAlt10" type="Sprite2D" parent="Screen 4"]
+position = Vector2(1007, -5238)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("3_la8hy")
+region_enabled = true
+region_rect = Rect2(1067, 310, 486, 154)
+
+[node name="Screen 3" type="Node2D" parent="."]
+
+[node name="LavaEnvironment15" type="Sprite2D" parent="Screen 3"]
+position = Vector2(887, -2734)
+scale = Vector2(0.659073, 0.4)
+texture = ExtResource("2_quqf4")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(883, 79, 259, 222)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 3/LavaEnvironment15"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 3/LavaEnvironment15/StaticBody2D"]
+position = Vector2(19.7247, -22.5)
+shape = SubResource("RectangleShape2D_bm76m")
+
+[node name="LavaEnvironment11" type="Sprite2D" parent="Screen 3"]
+position = Vector2(164.122, -2368.05)
+rotation = 0.0482459
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_quqf4")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(1284, 356, 329, 145)
+
+[node name="LavaGroundShapeSides44" type="Sprite2D" parent="Screen 3"]
+position = Vector2(496.5, -3596.1)
+rotation = 1.5708
+scale = Vector2(0.334785, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(2300, 573, 319, 150)
+
+[node name="LavaGroundShapeSides45" type="Sprite2D" parent="Screen 3"]
+position = Vector2(699.5, -3597.1)
+rotation = 1.5708
+scale = Vector2(0.334785, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2300, 573, 319, 150)
+
+[node name="LavaGroundShapeSides46" type="Sprite2D" parent="Screen 3"]
+position = Vector2(595.5, -3569.1)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 3"]
+position = Vector2(597.5, -3632.1)
+scale = Vector2(0.3, 0.3)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 3/StaticBody2D"]
+position = Vector2(0, 110.333)
+shape = SubResource("RectangleShape2D_osvat")
+
+[node name="LavaGroundShapeSides37" type="Sprite2D" parent="Screen 3"]
+position = Vector2(924.5, -3014.1)
+rotation = 1.5708
+scale = Vector2(0.334785, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(2300, 573, 319, 150)
+
+[node name="LavaGroundShapeSides15" type="Sprite2D" parent="Screen 3"]
+position = Vector2(294.122, -2370.05)
+scale = Vector2(0.286538, 0.354302)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 3/LavaGroundShapeSides15"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 3/LavaGroundShapeSides15/StaticBody2D"]
+position = Vector2(-0.00012207, 20.9575)
+shape = SubResource("RectangleShape2D_goyi4")
+
+[node name="LavaGroundShapeSides23" type="Sprite2D" parent="Screen 3"]
+position = Vector2(595.9, -2364.1)
+scale = Vector2(0.327586, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2300, 573, 319, 150)
+
+[node name="LavaGroundShapeSides30" type="Sprite2D" parent="Screen 3"]
+position = Vector2(550.65, -2468.1)
+rotation = 1.5708
+scale = Vector2(0.397351, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(1359, 804, 555, 171)
+
+[node name="LavaGroundShapeSides31" type="Sprite2D" parent="Screen 3"]
+position = Vector2(587.75, -2568.7)
+scale = Vector2(0.175175, 0.2)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(2159, 60, 572, 182)
+
+[node name="LavaGroundShapeSides32" type="Sprite2D" parent="Screen 3"]
+position = Vector2(615.65, -2470.1)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 3/LavaGroundShapeSides32"]
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 3/LavaGroundShapeSides32/StaticBody2D"]
+position = Vector2(85.4962, -15.3359)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_thkuw")
+
+[node name="LavaGroundShapeSides24" type="Sprite2D" parent="Screen 3"]
+position = Vector2(595.9, -2364.1)
+scale = Vector2(0.327586, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2300, 573, 319, 150)
+
+[node name="LavaGroundShapeSides38" type="Sprite2D" parent="Screen 3"]
+position = Vector2(550.65, -2468.1)
+rotation = 1.5708
+scale = Vector2(0.397351, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(1359, 804, 555, 171)
+
+[node name="LavaGroundShapeSides39" type="Sprite2D" parent="Screen 3"]
+position = Vector2(587.75, -2568.7)
+scale = Vector2(0.175175, 0.2)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(2159, 60, 572, 182)
+
+[node name="LavaGroundShapeSides40" type="Sprite2D" parent="Screen 3"]
+position = Vector2(615.65, -2470.1)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 3/LavaGroundShapeSides40"]
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 3/LavaGroundShapeSides40/StaticBody2D"]
+position = Vector2(85.4962, -15.3359)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_thkuw")
+
+[node name="LavaGroundShapeSides33" type="Sprite2D" parent="Screen 3"]
+position = Vector2(587, -2934)
+scale = Vector2(0.408, 0.373)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2300, 573, 319, 150)
+
+[node name="LavaGroundShapeSides34" type="Sprite2D" parent="Screen 3"]
+position = Vector2(518, -3072)
+rotation = 1.5708
+scale = Vector2(0.397351, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(177, 801, 783, 172)
+
+[node name="LavaGroundShapeSides35" type="Sprite2D" parent="Screen 3"]
+position = Vector2(582, -3200)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(2159, 60, 572, 182)
+
+[node name="LavaGroundShapeSides36" type="Sprite2D" parent="Screen 3"]
+position = Vector2(643, -3069)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 3/LavaGroundShapeSides36"]
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 3/LavaGroundShapeSides36/StaticBody2D"]
+position = Vector2(194.414, 14.9971)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_teoe5")
+
+[node name="LavaGroundShapeSides12" type="Sprite2D" parent="Screen 3"]
+position = Vector2(87.9, -1994.1)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 3/LavaGroundShapeSides12"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 3/LavaGroundShapeSides12/StaticBody2D"]
+position = Vector2(55.1666, 316.667)
+shape = SubResource("RectangleShape2D_uyomv")
+
+[node name="LavaGroundShapeSides13" type="Sprite2D" parent="Screen 3"]
+position = Vector2(183.9, -1897.1)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="LavaGroundShapeSides14" type="Sprite2D" parent="Screen 3"]
+position = Vector2(85.9, -1805.1)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="LavaGroundShapeSides41" type="Sprite2D" parent="Screen 3"]
+position = Vector2(87.9, -3346.1)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 3/LavaGroundShapeSides41"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 3/LavaGroundShapeSides41/StaticBody2D"]
+position = Vector2(70.3333, 193.668)
+shape = SubResource("RectangleShape2D_mksxc")
+
+[node name="LavaGroundShapeSides42" type="Sprite2D" parent="Screen 3"]
+position = Vector2(183.9, -3288.1)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(2159, 60, 572, 182)
+
+[node name="LavaGroundShapeSides43" type="Sprite2D" parent="Screen 3"]
+position = Vector2(85.9, -3226.1)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="Screen 2" type="Node2D" parent="."]
+
+[node name="LavaEnvironment2" type="Sprite2D" parent="Screen 2"]
+position = Vector2(81.8, -693.6)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_quqf4")
+region_enabled = true
+region_rect = Rect2(1284, 356, 329, 145)
+
+[node name="LavaEnvironment" type="Sprite2D" parent="Screen 2"]
+position = Vector2(200, -718)
+scale = Vector2(0.67529, 0.4)
+texture = ExtResource("2_quqf4")
+region_enabled = true
+region_rect = Rect2(883, 79, 259, 222)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 2/LavaEnvironment"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 2/LavaEnvironment/StaticBody2D"]
+position = Vector2(-18, -13.75)
+shape = SubResource("RectangleShape2D_bm76m")
+
+[node name="LavaEnvironment9" type="Sprite2D" parent="Screen 2"]
+position = Vector2(65.8, -1072.2)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_quqf4")
+region_enabled = true
+region_rect = Rect2(1284, 356, 329, 145)
+
+[node name="LavaEnvironment10" type="Sprite2D" parent="Screen 2"]
+position = Vector2(184, -1096.6)
+scale = Vector2(0.67529, 0.4)
+texture = ExtResource("2_quqf4")
+region_enabled = true
+region_rect = Rect2(883, 79, 259, 222)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 2/LavaEnvironment10"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 2/LavaEnvironment10/StaticBody2D"]
+position = Vector2(-18, -13.75)
+shape = SubResource("RectangleShape2D_bm76m")
+
+[node name="LavaEnvironment3" type="Sprite2D" parent="Screen 2"]
+position = Vector2(917, -1670)
+rotation = -0.495659
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_quqf4")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(1284, 356, 329, 145)
+
+[node name="LavaEnvironment6" type="Sprite2D" parent="Screen 2"]
+position = Vector2(1005, -1699)
+rotation = -0.140561
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_quqf4")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(1284, 356, 329, 145)
+
+[node name="LavaEnvironment4" type="Sprite2D" parent="Screen 2"]
+position = Vector2(791, -1646)
+scale = Vector2(0.659073, 0.4)
+texture = ExtResource("2_quqf4")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(883, 79, 259, 222)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 2/LavaEnvironment4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 2/LavaEnvironment4/StaticBody2D"]
+position = Vector2(16.6667, -22.5)
+shape = SubResource("RectangleShape2D_bm76m")
+
+[node name="LavaEnvironment13" type="Sprite2D" parent="Screen 2"]
+position = Vector2(1013, -2758)
+rotation = -0.495659
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_quqf4")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(1284, 356, 329, 145)
+
+[node name="LavaEnvironment14" type="Sprite2D" parent="Screen 2"]
+position = Vector2(1101, -2787)
+rotation = -0.140561
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_quqf4")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(1284, 356, 329, 145)
+
+[node name="LavaEnvironment5" type="Sprite2D" parent="Screen 2"]
+z_index = -1
+position = Vector2(792, -1576)
+scale = Vector2(0.659073, 0.4)
+texture = ExtResource("2_quqf4")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(574, 275, 145, 389)
+
+[node name="LavaEnvironment12" type="Sprite2D" parent="Screen 2"]
+position = Vector2(71.6281, -2373.57)
+rotation = 0.0683944
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_quqf4")
+region_enabled = true
+region_rect = Rect2(1284, 356, 329, 145)
+
+[node name="LavaEnvironment7" type="Sprite2D" parent="Screen 2"]
+visible = false
+position = Vector2(1018, -868)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_quqf4")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(1284, 356, 329, 145)
+
+[node name="LavaEnvironment8" type="Sprite2D" parent="Screen 2"]
+visible = false
+position = Vector2(898, -886)
+scale = Vector2(0.659073, 0.4)
+texture = ExtResource("2_quqf4")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(883, 79, 259, 222)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 2/LavaEnvironment8"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 2/LavaEnvironment8/StaticBody2D"]
+position = Vector2(16.6667, -22.5)
+shape = SubResource("RectangleShape2D_bm76m")
+disabled = true
+
+[node name="LavaGroundShapeSides20" type="Sprite2D" parent="Screen 2"]
+z_index = 3
+position = Vector2(546.3, 458.9)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides21" type="Sprite2D" parent="Screen 2"]
+z_index = 3
+position = Vector2(991.3, 560.9)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides" type="Sprite2D" parent="Screen 2"]
+position = Vector2(108, -78)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 2/LavaGroundShapeSides"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 2/LavaGroundShapeSides/StaticBody2D"]
+position = Vector2(54.9999, 316.667)
+shape = SubResource("RectangleShape2D_uyomv")
+
+[node name="LavaGroundShapeSides6" type="Sprite2D" parent="Screen 2"]
+position = Vector2(522.5, -460.1)
+rotation = 1.5708
+scale = Vector2(0.334785, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(2300, 573, 319, 150)
+
+[node name="LavaGroundShapeSides7" type="Sprite2D" parent="Screen 2"]
+position = Vector2(725.5, -461.1)
+rotation = 1.5708
+scale = Vector2(0.334785, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2300, 573, 319, 150)
+
+[node name="LavaGroundShapeSides5" type="Sprite2D" parent="Screen 2"]
+position = Vector2(621.5, -433.1)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="LavaGroundShapeSides4" type="Sprite2D" parent="Screen 2"]
+position = Vector2(623.5, -496.1)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 2/LavaGroundShapeSides4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 2/LavaGroundShapeSides4/StaticBody2D"]
+position = Vector2(0, 110.333)
+shape = SubResource("RectangleShape2D_osvat")
+
+[node name="LavaGroundShapeSides47" type="Sprite2D" parent="Screen 2"]
+position = Vector2(597.5, -3632.1)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="LavaGroundShapeSides38" type="Sprite2D" parent="Screen 2"]
+position = Vector2(1127.5, -3015.1)
+rotation = 1.5708
+scale = Vector2(0.334785, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2300, 573, 319, 150)
+
+[node name="LavaGroundShapeSides39" type="Sprite2D" parent="Screen 2"]
+position = Vector2(1023.5, -2987.1)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="LavaGroundShapeSides40" type="Sprite2D" parent="Screen 2"]
+position = Vector2(1025.5, -3050.1)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 2/LavaGroundShapeSides40"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 2/LavaGroundShapeSides40/StaticBody2D"]
+position = Vector2(0, 110.333)
+shape = SubResource("RectangleShape2D_osvat")
+
+[node name="LavaGroundShapeSides8" type="Sprite2D" parent="Screen 2"]
+position = Vector2(443, -1081.22)
+rotation = 1.5708
+scale = Vector2(0.483866, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(2300, 573, 319, 150)
+
+[node name="LavaGroundShapeSides9" type="Sprite2D" parent="Screen 2"]
+position = Vector2(750, -1078)
+rotation = 1.5708
+scale = Vector2(0.49836, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2300, 573, 319, 150)
+
+[node name="LavaGroundShapeSides10" type="Sprite2D" parent="Screen 2"]
+position = Vector2(590.95, -1028)
+scale = Vector2(0.330851, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="LavaGroundShapeSides11" type="Sprite2D" parent="Screen 2"]
+position = Vector2(602.5, -1135)
+scale = Vector2(0.32205, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 2/LavaGroundShapeSides11"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 2/LavaGroundShapeSides11/StaticBody2D"]
+position = Vector2(-23.2882, 173.333)
+shape = SubResource("RectangleShape2D_kwh4d")
+
+[node name="LavaGroundShapeSides16" type="Sprite2D" parent="Screen 2"]
+position = Vector2(378.9, -1400.1)
+scale = Vector2(0.327586, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(2300, 573, 319, 150)
+
+[node name="LavaGroundShapeSides17" type="Sprite2D" parent="Screen 2"]
+position = Vector2(333.65, -1504.1)
+rotation = 1.5708
+scale = Vector2(0.397351, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(1359, 804, 555, 171)
+
+[node name="LavaGroundShapeSides19" type="Sprite2D" parent="Screen 2"]
+position = Vector2(370.75, -1604.7)
+scale = Vector2(0.175175, 0.2)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(2159, 60, 572, 182)
+
+[node name="LavaGroundShapeSides18" type="Sprite2D" parent="Screen 2"]
+position = Vector2(398.65, -1506.1)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 2/LavaGroundShapeSides18"]
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 2/LavaGroundShapeSides18/StaticBody2D"]
+position = Vector2(85.4962, -15.3359)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_thkuw")
+
+[node name="LavaGroundShapeSides2" type="Sprite2D" parent="Screen 2"]
+position = Vector2(204, 19)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="LavaGroundShapeSides29" type="Sprite2D" parent="Screen 2"]
+position = Vector2(-245.48, -2823.48)
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="LavaGroundShapeSides3" type="Sprite2D" parent="Screen 2"]
+position = Vector2(106, 111)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(1231, 56, 806, 186)
+
+[node name="LavaGroundShapeSides60" type="Sprite2D" parent="Screen 2"]
+position = Vector2(153, -4516)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(189, 563, 773, 166)
+
+[node name="LavaGroundShapeSides26" type="Sprite2D" parent="Screen 2"]
+position = Vector2(-242.48, -2986.48)
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="LavaGroundShapeSides24" type="Sprite2D" parent="Screen 2"]
+position = Vector2(-305.48, -2821.48)
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="LavaGroundShapeSides23" type="Sprite2D" parent="Screen 2"]
+position = Vector2(-192.48, -2934.48)
+rotation = 1.5708
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="LavaGroundShapeSides28" type="Sprite2D" parent="Screen 2"]
+position = Vector2(-192.48, -2875.48)
+rotation = 1.5708
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="LavaGroundShapeSides25" type="Sprite2D" parent="Screen 2"]
+position = Vector2(-357.48, -2936.48)
+rotation = 1.5708
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="LavaGroundShapeSides27" type="Sprite2D" parent="Screen 2"]
+position = Vector2(-357.48, -2873.48)
+rotation = 1.5708
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="Screen 1" type="Node2D" parent="."]
+
+[node name="LavaGroundShapeSides" type="Sprite2D" parent="Screen 1"]
+z_index = 3
+position = Vector2(100, 1723)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 1/LavaGroundShapeSides"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 1/LavaGroundShapeSides/StaticBody2D"]
+position = Vector2(46.6666, 240.001)
+shape = SubResource("RectangleShape2D_fhnpl")
+
+[node name="LavaGroundShapeSides5" type="Sprite2D" parent="Screen 1"]
+z_index = 3
+position = Vector2(631.3, 1408.9)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides10" type="Sprite2D" parent="Screen 1"]
+z_index = 3
+position = Vector2(451.3, 1408.9)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 1/LavaGroundShapeSides10"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 1/LavaGroundShapeSides10/StaticBody2D"]
+position = Vector2(307.333, 40.3325)
+shape = SubResource("RectangleShape2D_36x3r")
+
+[node name="LavaGroundShapeSides20" type="Sprite2D" parent="Screen 1"]
+z_index = 3
+position = Vector2(457, 1428)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides23" type="Sprite2D" parent="Screen 1"]
+z_index = 3
+position = Vector2(635, 1425)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides6" type="Sprite2D" parent="Screen 1"]
+z_index = 3
+position = Vector2(555.3, 898.9)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 1/LavaGroundShapeSides6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 1/LavaGroundShapeSides6/StaticBody2D"]
+position = Vector2(1.66675, 323.333)
+shape = SubResource("RectangleShape2D_agbre")
+
+[node name="LavaGroundShapeSides8" type="Sprite2D" parent="Screen 1"]
+z_index = 3
+position = Vector2(986.3, 1160.9)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 1/LavaGroundShapeSides8"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 1/LavaGroundShapeSides8/StaticBody2D"]
+position = Vector2(-44.0006, 44.6667)
+shape = SubResource("RectangleShape2D_vp1wh")
+
+[node name="LavaGroundShapeSides11" type="Sprite2D" parent="Screen 1"]
+z_index = 3
+position = Vector2(139, 780)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 1/LavaGroundShapeSides11"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 1/LavaGroundShapeSides11/StaticBody2D"]
+position = Vector2(-1.52588e-05, 710)
+shape = SubResource("RectangleShape2D_6j8oy")
+
+[node name="LavaGroundShapeSides14" type="Sprite2D" parent="Screen 1"]
+z_index = 3
+position = Vector2(138, 1192)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides9" type="Sprite2D" parent="Screen 1"]
+z_index = 3
+position = Vector2(555.3, 1089.9)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides13" type="Sprite2D" parent="Screen 1"]
+z_index = 3
+position = Vector2(993.3, 1186.9)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides17" type="Sprite2D" parent="Screen 1"]
+z_index = 3
+position = Vector2(985.3, 800.9)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 1/LavaGroundShapeSides17"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 1/LavaGroundShapeSides17/StaticBody2D"]
+position = Vector2(-44.0006, 44.6667)
+shape = SubResource("RectangleShape2D_vp1wh")
+
+[node name="LavaGroundShapeSides18" type="Sprite2D" parent="Screen 1"]
+z_index = 3
+position = Vector2(992.3, 826.9)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_h = true
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides2" type="Sprite2D" parent="Screen 1"]
+z_index = 1
+position = Vector2(214, 1828)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides15" type="Sprite2D" parent="Screen 1"]
+z_index = 1
+position = Vector2(234, 883)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides16" type="Sprite2D" parent="Screen 1"]
+z_index = 1
+position = Vector2(234, 1083)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides3" type="Sprite2D" parent="Screen 1"]
+z_index = 3
+position = Vector2(976, 1719)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 1/LavaGroundShapeSides3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 1/LavaGroundShapeSides3/StaticBody2D"]
+position = Vector2(-50, 270)
+shape = SubResource("RectangleShape2D_siatw")
+
+[node name="LavaGroundShapeSides4" type="Sprite2D" parent="Screen 1"]
+z_index = 1
+position = Vector2(861, 1822)
+rotation = 1.5708
+scale = Vector2(0.310427, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides7" type="Sprite2D" parent="Screen 1"]
+z_index = 1
+position = Vector2(468.3, 998.9)
+rotation = 1.5708
+scale = Vector2(0.310427, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides12" type="Sprite2D" parent="Screen 1"]
+z_index = 1
+position = Vector2(645.3, 998.9)
+rotation = 1.5708
+scale = Vector2(0.310427, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides19" type="Sprite2D" parent="Screen 1"]
+z_index = 3
+position = Vector2(546.3, 267.9)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 1/LavaGroundShapeSides19"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 1/LavaGroundShapeSides19/StaticBody2D"]
+position = Vector2(1.66675, 323.333)
+shape = SubResource("RectangleShape2D_agbre")
+
+[node name="LavaGroundShapeSides21" type="Sprite2D" parent="Screen 1"]
+z_index = 1
+position = Vector2(459.3, 367.9)
+rotation = 1.5708
+scale = Vector2(0.310427, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides22" type="Sprite2D" parent="Screen 1"]
+z_index = 1
+position = Vector2(636.3, 367.9)
+rotation = 1.5708
+scale = Vector2(0.310427, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides24" type="Sprite2D" parent="Screen 1"]
+z_index = 3
+position = Vector2(991.3, 369.9)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Screen 1/LavaGroundShapeSides24"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Screen 1/LavaGroundShapeSides24/StaticBody2D"]
+position = Vector2(55.6668, 317)
+shape = SubResource("RectangleShape2D_agbre")
+
+[node name="LavaGroundShapeSides25" type="Sprite2D" parent="Screen 1"]
+z_index = 1
+position = Vector2(904.3, 469.9)
+rotation = 1.5708
+scale = Vector2(0.310427, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides26" type="Sprite2D" parent="Screen 1"]
+z_index = 1
+position = Vector2(1076.3, 464.9)
+rotation = 1.5708
+scale = Vector2(0.310427, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="Ground Platform" type="Node" parent="."]
+
+[node name="LavaGroundShapeSides" type="Sprite2D" parent="Ground Platform"]
+z_index = 3
+position = Vector2(309, 1907)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides6" type="Sprite2D" parent="Ground Platform"]
+z_index = 3
+position = Vector2(116, 1907)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides4" type="Sprite2D" parent="Ground Platform"]
+z_index = 3
+position = Vector2(491, 1905)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides2" type="Sprite2D" parent="Ground Platform"]
+z_index = 3
+position = Vector2(977, 1904)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(189, 563, 773, 166)
+
+[node name="LavaGroundShapeSides3" type="Sprite2D" parent="Ground Platform"]
+z_index = 3
+position = Vector2(787, 1905)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(189, 563, 773, 166)
+
+[node name="LavaGroundShapeSides5" type="Sprite2D" parent="Ground Platform"]
+z_index = 3
+position = Vector2(649, 1905)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(189, 563, 773, 166)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Ground Platform"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground Platform/StaticBody2D"]
+position = Vector2(543, 1921.5)
+shape = SubResource("RectangleShape2D_022gq")
+
+[node name="Wall Right" type="Node" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wall Right"]
+position = Vector2(-20, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall Right/StaticBody2D"]
+position = Vector2(1103, -7298)
+shape = SubResource("RectangleShape2D_6hnbe")
+
+[node name="LavaGroundShapeSides" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, 1816)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides2" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, 1624)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides3" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, 1432)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides4" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, 1240)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides5" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, 1048)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides6" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, 856)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides7" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, 663)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides8" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, 471)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides9" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, 279)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides10" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, 87.0002)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides11" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -105)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides12" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -297)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides13" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -489)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides14" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -681)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides15" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -873)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides16" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -1065)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides17" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -1257)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides18" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -1449)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides19" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -1642)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides20" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -1834)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides21" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -2026)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides22" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -2218)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides23" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -2410)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides24" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -2602)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides25" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -2795)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides26" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -2987)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides27" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -3179)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides28" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -3371)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides29" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -3563)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides30" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -3755)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides31" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -3948)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides32" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -4140)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides33" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -4332)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides34" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -4524)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides35" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -4716)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides36" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -4908)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides37" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -5100)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides38" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -5292)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides39" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -5484)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides40" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -5676)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides41" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -5868)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides42" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -6060)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides43" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -6253)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides44" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -6445)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides45" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -6637)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides46" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -6829)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides47" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -7021)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides48" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -7213)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides49" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -7406)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides50" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -7598)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides51" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -7790)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides52" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -7982)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides53" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -8174)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides54" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -8366)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides55" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -8559)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides56" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -8751)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides57" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -8943)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides58" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -9135)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides59" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -9327)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides60" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -9519)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides61" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -9711)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides62" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -9903)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides63" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -10095)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides64" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -10287)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides65" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -10479)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides66" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -10671)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides67" type="Sprite2D" parent="Wall Right"]
+z_index = 7
+position = Vector2(1077, -10864)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides97" type="Sprite2D" parent="Wall Right"]
+z_index = 7
+position = Vector2(1056, -10861)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides98" type="Sprite2D" parent="Wall Right"]
+z_index = 6
+position = Vector2(1052, -10850)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides101" type="Sprite2D" parent="Wall Right"]
+z_index = 7
+position = Vector2(1032, -11011)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides102" type="Sprite2D" parent="Wall Right"]
+z_index = 7
+position = Vector2(1025, -11000)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides103" type="Sprite2D" parent="Wall Right"]
+z_index = 7
+position = Vector2(1025, -10856)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides99" type="Sprite2D" parent="Wall Right"]
+z_index = 7
+position = Vector2(1052, -11018)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides68" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -11056)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides69" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -11248)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides70" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -11440)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides71" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -11632)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides72" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -11824)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides73" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -12017)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides74" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -12209)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides75" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -12401)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides76" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -12593)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides77" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -12785)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides78" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -12977)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides79" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -13170)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides80" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -13362)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides81" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -13554)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides82" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -13746)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides83" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -13938)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides84" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -14130)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides85" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -14322)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides86" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -14514)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides87" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -14706)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides88" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -14898)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides89" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -15090)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides90" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -15282)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides91" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -15475)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides92" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -15667)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides93" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -15859)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides94" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -16051)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides95" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -16243)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides96" type="Sprite2D" parent="Wall Right"]
+z_index = 3
+position = Vector2(1077, -16435)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="Wall Left" type="Node" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wall Left"]
+position = Vector2(34, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall Left/StaticBody2D"]
+position = Vector2(-30, -7301)
+shape = SubResource("RectangleShape2D_2mj6v")
+
+[node name="LavaGroundShapeSides" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, 1816)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides2" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, 1624)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides3" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, 1432)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides4" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, 1240)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides5" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, 1048)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides6" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, 856)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides7" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, 663)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides8" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, 471)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides9" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, 279)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides10" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, 87.0003)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides11" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -105)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides12" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -297)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides13" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -489)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides14" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -681)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides15" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -873)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides16" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -1065)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides17" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -1257)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides18" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -1449)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides19" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -1642)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides20" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -1834)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides21" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -2026)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides22" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -2218)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides23" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -2410)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides24" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -2602)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides25" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -2794)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides26" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -2986)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides27" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -3178)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides28" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -3370)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides29" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -3562)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides30" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -3754)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides31" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(12, -3946)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides32" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -4139)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides33" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -4331)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides34" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -4523)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides35" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -4715)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides36" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -4907)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides37" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -5099)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides38" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -5291)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides39" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -5483)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides40" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -5675)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides41" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -5867)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides42" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -6059)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides43" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -6252)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides44" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -6444)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides45" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -6636)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides46" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -6828)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides47" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -7020)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides48" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -7212)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides49" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -7405)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides50" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -7597)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides51" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -7789)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides52" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -7981)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides53" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -8173)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides54" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -8365)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides55" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -8558)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides56" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -8750)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides57" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -8942)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides58" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -9134)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides59" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -9326)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides60" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -9518)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides61" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -9710)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides62" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -9902)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides63" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -10094)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides64" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -10286)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides65" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -10478)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides66" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -10670)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides67" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -10863)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides68" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -11055)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides69" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -11247)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides70" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -11439)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides71" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -11631)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides72" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -11823)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides73" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -12015)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides74" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -12207)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides75" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -12399)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides76" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -12591)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides77" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -12783)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides78" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -12975)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides79" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(12, -13167)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides80" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -13360)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides81" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -13552)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides82" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -13744)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides83" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -13936)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides84" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -14128)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides85" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -14320)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides86" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -14512)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides87" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -14704)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides88" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -14896)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides89" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -15088)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides90" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -15280)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides91" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -15473)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides92" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -15665)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides93" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -15857)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides94" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -16049)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides95" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -16241)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides96" type="Sprite2D" parent="Wall Left"]
+z_index = 3
+position = Vector2(13, -16433)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides22" type="Sprite2D" parent="."]
+position = Vector2(-304.48, -2987.48)
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(49, 55, 1034, 192)
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="LavaGroundShapeSides103" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(968, -11117)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Node2D/LavaGroundShapeSides103"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/LavaGroundShapeSides103/StaticBody2D"]
+position = Vector2(-1415, -83.3398)
+shape = SubResource("RectangleShape2D_430w3")
+
+[node name="LavaGroundShapeSides104" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(968, -11141)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides105" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(968, -11173)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides106" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(968, -11197)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides107" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(968, -11221)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides108" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(968, -11245)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides109" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(824, -11117)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides110" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(824, -11141)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides111" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(824, -11173)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides112" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(824, -11197)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides113" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(824, -11221)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides114" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(824, -11245)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides115" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(656, -11117)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides116" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(656, -11141)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides117" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(656, -11173)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides118" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(656, -11197)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides119" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(656, -11221)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides120" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(656, -11245)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides121" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(488, -11117)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides122" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(488, -11141)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides123" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(488, -11173)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides124" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(488, -11197)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides125" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(488, -11221)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides126" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(488, -11245)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides127" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(304, -11117)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides128" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(304, -11141)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides129" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(304, -11173)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides130" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(304, -11197)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides131" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(304, -11221)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides132" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(304, -11245)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides133" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(120, -11117)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides134" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(120, -11141)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides135" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(120, -11173)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides136" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(120, -11197)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides137" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(120, -11221)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)
+
+[node name="LavaGroundShapeSides138" type="Sprite2D" parent="Node2D"]
+z_index = 3
+position = Vector2(120, -11245)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_wexds")
+region_enabled = true
+region_rect = Rect2(159, 309, 762, 166)

@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://bpk51wa7d4e4y"]
+
+[node name="TouchControl" type="CanvasLayer"]
